@@ -1,0 +1,6114 @@
+[
+  {
+    "id": 4547,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:40:22"
+  },
+  {
+    "id": 4548,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:40:22"
+  },
+  {
+    "id": 4549,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:40:52"
+  },
+  {
+    "id": 4550,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111744.00",
+    "timestamp": "2025-08-25 19:40:52"
+  },
+  {
+    "id": 4551,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:40:57"
+  },
+  {
+    "id": 4552,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:40:57"
+  },
+  {
+    "id": 4553,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:41:27"
+  },
+  {
+    "id": 4554,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111744.00",
+    "timestamp": "2025-08-25 19:41:27"
+  },
+  {
+    "id": 4555,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:41:31"
+  },
+  {
+    "id": 4556,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:41:31"
+  },
+  {
+    "id": 4557,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:42:01"
+  },
+  {
+    "id": 4558,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111876.00",
+    "timestamp": "2025-08-25 19:42:02"
+  },
+  {
+    "id": 4559,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:42:06"
+  },
+  {
+    "id": 4560,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:42:06"
+  },
+  {
+    "id": 4561,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:42:36"
+  },
+  {
+    "id": 4562,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111876.00",
+    "timestamp": "2025-08-25 19:42:36"
+  },
+  {
+    "id": 4563,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:42:40"
+  },
+  {
+    "id": 4564,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:42:40"
+  },
+  {
+    "id": 4565,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:43:10"
+  },
+  {
+    "id": 4566,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111841.00",
+    "timestamp": "2025-08-25 19:43:11"
+  },
+  {
+    "id": 4567,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:43:15"
+  },
+  {
+    "id": 4568,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:43:15"
+  },
+  {
+    "id": 4569,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:43:45"
+  },
+  {
+    "id": 4570,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111841.00",
+    "timestamp": "2025-08-25 19:43:45"
+  },
+  {
+    "id": 4571,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:43:49"
+  },
+  {
+    "id": 4572,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:43:50"
+  },
+  {
+    "id": 4573,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:44:20"
+  },
+  {
+    "id": 4574,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111772.00",
+    "timestamp": "2025-08-25 19:44:20"
+  },
+  {
+    "id": 4575,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:44:24"
+  },
+  {
+    "id": 4576,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:44:24"
+  },
+  {
+    "id": 4577,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:44:54"
+  },
+  {
+    "id": 4578,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111772.00",
+    "timestamp": "2025-08-25 19:44:54"
+  },
+  {
+    "id": 4579,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:44:59"
+  },
+  {
+    "id": 4580,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:44:59"
+  },
+  {
+    "id": 4581,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:45:29"
+  },
+  {
+    "id": 4582,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111737.00",
+    "timestamp": "2025-08-25 19:45:29"
+  },
+  {
+    "id": 4583,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:45:34"
+  },
+  {
+    "id": 4584,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:45:34"
+  },
+  {
+    "id": 4585,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:46:04"
+  },
+  {
+    "id": 4586,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111737.00",
+    "timestamp": "2025-08-25 19:46:04"
+  },
+  {
+    "id": 4587,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:46:09"
+  },
+  {
+    "id": 4588,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:46:09"
+  },
+  {
+    "id": 4589,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:46:39"
+  },
+  {
+    "id": 4590,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111791.00",
+    "timestamp": "2025-08-25 19:46:40"
+  },
+  {
+    "id": 4591,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:46:44"
+  },
+  {
+    "id": 4592,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:46:44"
+  },
+  {
+    "id": 4593,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:47:14"
+  },
+  {
+    "id": 4594,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111791.00",
+    "timestamp": "2025-08-25 19:47:14"
+  },
+  {
+    "id": 4595,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:47:19"
+  },
+  {
+    "id": 4596,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:47:19"
+  },
+  {
+    "id": 4597,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:47:49"
+  },
+  {
+    "id": 4598,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111847.00",
+    "timestamp": "2025-08-25 19:47:49"
+  },
+  {
+    "id": 4599,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:47:53"
+  },
+  {
+    "id": 4600,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:47:53"
+  },
+  {
+    "id": 4601,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:48:23"
+  },
+  {
+    "id": 4602,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111847.00",
+    "timestamp": "2025-08-25 19:48:23"
+  },
+  {
+    "id": 4603,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:48:28"
+  },
+  {
+    "id": 4604,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:48:28"
+  },
+  {
+    "id": 4605,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:48:58"
+  },
+  {
+    "id": 4606,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111875.00",
+    "timestamp": "2025-08-25 19:48:58"
+  },
+  {
+    "id": 4607,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:49:02"
+  },
+  {
+    "id": 4608,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:49:02"
+  },
+  {
+    "id": 4609,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:49:32"
+  },
+  {
+    "id": 4610,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111875.00",
+    "timestamp": "2025-08-25 19:49:32"
+  },
+  {
+    "id": 4611,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:49:37"
+  },
+  {
+    "id": 4612,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:49:37"
+  },
+  {
+    "id": 4613,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:50:07"
+  },
+  {
+    "id": 4614,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112076.00",
+    "timestamp": "2025-08-25 19:50:07"
+  },
+  {
+    "id": 4615,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:50:12"
+  },
+  {
+    "id": 4616,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:50:12"
+  },
+  {
+    "id": 4617,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:50:25"
+  },
+  {
+    "id": 4618,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111996.00",
+    "timestamp": "2025-08-25 19:50:26"
+  },
+  {
+    "id": 4619,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:50:31"
+  },
+  {
+    "id": 4620,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:50:31"
+  },
+  {
+    "id": 4621,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:51:01"
+  },
+  {
+    "id": 4622,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112076.00",
+    "timestamp": "2025-08-25 19:51:02"
+  },
+  {
+    "id": 4623,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:51:07"
+  },
+  {
+    "id": 4624,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:51:07"
+  },
+  {
+    "id": 4625,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:51:37"
+  },
+  {
+    "id": 4626,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112076.00",
+    "timestamp": "2025-08-25 19:51:37"
+  },
+  {
+    "id": 4627,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:51:41"
+  },
+  {
+    "id": 4628,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:51:41"
+  },
+  {
+    "id": 4629,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:52:11"
+  },
+  {
+    "id": 4630,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112046.00",
+    "timestamp": "2025-08-25 19:52:12"
+  },
+  {
+    "id": 4631,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:52:16"
+  },
+  {
+    "id": 4632,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:52:16"
+  },
+  {
+    "id": 4633,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:52:46"
+  },
+  {
+    "id": 4634,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112046.00",
+    "timestamp": "2025-08-25 19:52:46"
+  },
+  {
+    "id": 4635,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:52:51"
+  },
+  {
+    "id": 4636,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:52:51"
+  },
+  {
+    "id": 4637,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:53:21"
+  },
+  {
+    "id": 4638,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112025.00",
+    "timestamp": "2025-08-25 19:53:21"
+  },
+  {
+    "id": 4639,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:53:26"
+  },
+  {
+    "id": 4640,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:53:26"
+  },
+  {
+    "id": 4641,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:53:56"
+  },
+  {
+    "id": 4642,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112025.00",
+    "timestamp": "2025-08-25 19:53:56"
+  },
+  {
+    "id": 4643,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:54:01"
+  },
+  {
+    "id": 4644,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:54:01"
+  },
+  {
+    "id": 4645,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:54:31"
+  },
+  {
+    "id": 4646,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111987.00",
+    "timestamp": "2025-08-25 19:54:31"
+  },
+  {
+    "id": 4647,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:54:36"
+  },
+  {
+    "id": 4648,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:54:36"
+  },
+  {
+    "id": 4649,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:55:06"
+  },
+  {
+    "id": 4650,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111987.00",
+    "timestamp": "2025-08-25 19:55:06"
+  },
+  {
+    "id": 4651,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:55:10"
+  },
+  {
+    "id": 4652,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:55:10"
+  },
+  {
+    "id": 4653,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:55:40"
+  },
+  {
+    "id": 4654,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112088.00",
+    "timestamp": "2025-08-25 19:55:41"
+  },
+  {
+    "id": 4655,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:55:45"
+  },
+  {
+    "id": 4656,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:55:45"
+  },
+  {
+    "id": 4657,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:56:15"
+  },
+  {
+    "id": 4658,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112088.00",
+    "timestamp": "2025-08-25 19:56:18"
+  },
+  {
+    "id": 4659,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:56:22"
+  },
+  {
+    "id": 4660,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:56:22"
+  },
+  {
+    "id": 4661,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:56:52"
+  },
+  {
+    "id": 4662,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112114.00",
+    "timestamp": "2025-08-25 19:56:53"
+  },
+  {
+    "id": 4663,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:56:59"
+  },
+  {
+    "id": 4664,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:56:59"
+  },
+  {
+    "id": 4665,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:57:29"
+  },
+  {
+    "id": 4666,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112114.00",
+    "timestamp": "2025-08-25 19:57:29"
+  },
+  {
+    "id": 4667,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:57:33"
+  },
+  {
+    "id": 4668,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:57:33"
+  },
+  {
+    "id": 4669,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:58:03"
+  },
+  {
+    "id": 4670,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112147.00",
+    "timestamp": "2025-08-25 19:58:04"
+  },
+  {
+    "id": 4671,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:58:08"
+  },
+  {
+    "id": 4672,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:58:08"
+  },
+  {
+    "id": 4673,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:58:38"
+  },
+  {
+    "id": 4674,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112147.00",
+    "timestamp": "2025-08-25 19:58:39"
+  },
+  {
+    "id": 4675,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:58:43"
+  },
+  {
+    "id": 4676,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:58:43"
+  },
+  {
+    "id": 4677,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:59:13"
+  },
+  {
+    "id": 4678,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112075.00",
+    "timestamp": "2025-08-25 19:59:13"
+  },
+  {
+    "id": 4679,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:59:18"
+  },
+  {
+    "id": 4680,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:59:18"
+  },
+  {
+    "id": 4681,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 19:59:48"
+  },
+  {
+    "id": 4682,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112075.00",
+    "timestamp": "2025-08-25 19:59:48"
+  },
+  {
+    "id": 4683,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 19:59:52"
+  },
+  {
+    "id": 4684,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 19:59:52"
+  },
+  {
+    "id": 4685,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:00:22"
+  },
+  {
+    "id": 4686,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112030.00",
+    "timestamp": "2025-08-25 20:00:23"
+  },
+  {
+    "id": 4687,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:00:27"
+  },
+  {
+    "id": 4688,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:00:27"
+  },
+  {
+    "id": 4689,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:01:08"
+  },
+  {
+    "id": 4690,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111923.00",
+    "timestamp": "2025-08-25 20:01:08"
+  },
+  {
+    "id": 4691,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:01:14"
+  },
+  {
+    "id": 4692,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:01:14"
+  },
+  {
+    "id": 4693,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:01:44"
+  },
+  {
+    "id": 4694,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111923.00",
+    "timestamp": "2025-08-25 20:01:45"
+  },
+  {
+    "id": 4695,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:01:49"
+  },
+  {
+    "id": 4696,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:01:49"
+  },
+  {
+    "id": 4697,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:02:19"
+  },
+  {
+    "id": 4698,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111889.00",
+    "timestamp": "2025-08-25 20:02:19"
+  },
+  {
+    "id": 4699,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:03:11"
+  },
+  {
+    "id": 4700,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:03:11"
+  },
+  {
+    "id": 4701,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:03:41"
+  },
+  {
+    "id": 4702,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111917.00",
+    "timestamp": "2025-08-25 20:03:42"
+  },
+  {
+    "id": 4703,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:03:49"
+  },
+  {
+    "id": 4704,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:03:49"
+  },
+  {
+    "id": 4705,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:04:19"
+  },
+  {
+    "id": 4706,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111917.00",
+    "timestamp": "2025-08-25 20:04:19"
+  },
+  {
+    "id": 4707,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:04:26"
+  },
+  {
+    "id": 4708,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:04:26"
+  },
+  {
+    "id": 4709,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:04:56"
+  },
+  {
+    "id": 4710,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111946.00",
+    "timestamp": "2025-08-25 20:04:56"
+  },
+  {
+    "id": 4711,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:05:01"
+  },
+  {
+    "id": 4712,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:05:01"
+  },
+  {
+    "id": 4713,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:05:31"
+  },
+  {
+    "id": 4714,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111946.00",
+    "timestamp": "2025-08-25 20:05:31"
+  },
+  {
+    "id": 4715,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:05:35"
+  },
+  {
+    "id": 4716,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:05:35"
+  },
+  {
+    "id": 4717,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:06:05"
+  },
+  {
+    "id": 4718,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111988.00",
+    "timestamp": "2025-08-25 20:06:06"
+  },
+  {
+    "id": 4719,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:06:10"
+  },
+  {
+    "id": 4720,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:06:10"
+  },
+  {
+    "id": 4721,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:06:40"
+  },
+  {
+    "id": 4722,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111988.00",
+    "timestamp": "2025-08-25 20:06:40"
+  },
+  {
+    "id": 4723,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:06:44"
+  },
+  {
+    "id": 4724,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:06:44"
+  },
+  {
+    "id": 4725,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:07:12"
+  },
+  {
+    "id": 4726,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112046.00",
+    "timestamp": "2025-08-25 20:07:13"
+  },
+  {
+    "id": 4727,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:07:22"
+  },
+  {
+    "id": 4728,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:07:22"
+  },
+  {
+    "id": 4729,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:07:52"
+  },
+  {
+    "id": 4730,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112046.00",
+    "timestamp": "2025-08-25 20:07:52"
+  },
+  {
+    "id": 4731,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:08:00"
+  },
+  {
+    "id": 4732,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:08:00"
+  },
+  {
+    "id": 4733,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:08:30"
+  },
+  {
+    "id": 4734,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112094.00",
+    "timestamp": "2025-08-25 20:08:30"
+  },
+  {
+    "id": 4735,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:08:35"
+  },
+  {
+    "id": 4736,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:08:35"
+  },
+  {
+    "id": 4737,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:08:53"
+  },
+  {
+    "id": 4738,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112094.00",
+    "timestamp": "2025-08-25 20:08:53"
+  },
+  {
+    "id": 4739,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:09:00"
+  },
+  {
+    "id": 4740,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:09:00"
+  },
+  {
+    "id": 4741,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:09:21"
+  },
+  {
+    "id": 4742,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112155.00",
+    "timestamp": "2025-08-25 20:09:22"
+  },
+  {
+    "id": 4743,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:09:28"
+  },
+  {
+    "id": 4744,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:09:28"
+  },
+  {
+    "id": 4745,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:09:58"
+  },
+  {
+    "id": 4746,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112155.00",
+    "timestamp": "2025-08-25 20:09:58"
+  },
+  {
+    "id": 4747,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:10:03"
+  },
+  {
+    "id": 4748,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:10:03"
+  },
+  {
+    "id": 4749,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:10:33"
+  },
+  {
+    "id": 4750,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112123.00",
+    "timestamp": "2025-08-25 20:10:33"
+  },
+  {
+    "id": 4751,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:10:38"
+  },
+  {
+    "id": 4752,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:10:38"
+  },
+  {
+    "id": 4753,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:11:08"
+  },
+  {
+    "id": 4754,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112123.00",
+    "timestamp": "2025-08-25 20:11:08"
+  },
+  {
+    "id": 4755,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:11:13"
+  },
+  {
+    "id": 4756,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:11:13"
+  },
+  {
+    "id": 4757,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:11:33"
+  },
+  {
+    "id": 4758,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112108.00",
+    "timestamp": "2025-08-25 20:11:34"
+  },
+  {
+    "id": 4759,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:11:39"
+  },
+  {
+    "id": 4760,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:11:39"
+  },
+  {
+    "id": 4761,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:11:48"
+  },
+  {
+    "id": 4762,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112108.00",
+    "timestamp": "2025-08-25 20:11:49"
+  },
+  {
+    "id": 4763,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:11:55"
+  },
+  {
+    "id": 4764,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:11:55"
+  },
+  {
+    "id": 4765,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:12:25"
+  },
+  {
+    "id": 4766,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112022.00",
+    "timestamp": "2025-08-25 20:12:56"
+  },
+  {
+    "id": 4767,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:14:53"
+  },
+  {
+    "id": 4768,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:14:53"
+  },
+  {
+    "id": 4769,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:15:03"
+  },
+  {
+    "id": 4770,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111992.00",
+    "timestamp": "2025-08-25 20:15:04"
+  },
+  {
+    "id": 4771,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:15:10"
+  },
+  {
+    "id": 4772,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:15:10"
+  },
+  {
+    "id": 4773,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:15:40"
+  },
+  {
+    "id": 4774,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:16:33"
+  },
+  {
+    "id": 4775,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112030.00",
+    "timestamp": "2025-08-25 20:17:04"
+  },
+  {
+    "id": 4776,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:17:10"
+  },
+  {
+    "id": 4777,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:17:10"
+  },
+  {
+    "id": 4778,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:17:40"
+  },
+  {
+    "id": 4779,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112101.00",
+    "timestamp": "2025-08-25 20:18:41"
+  },
+  {
+    "id": 4780,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:18:47"
+  },
+  {
+    "id": 4781,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:18:47"
+  },
+  {
+    "id": 4782,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:19:17"
+  },
+  {
+    "id": 4783,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112101.00",
+    "timestamp": "2025-08-25 20:19:17"
+  },
+  {
+    "id": 4784,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:19:21"
+  },
+  {
+    "id": 4785,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:19:21"
+  },
+  {
+    "id": 4786,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:19:51"
+  },
+  {
+    "id": 4787,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112175.00",
+    "timestamp": "2025-08-25 20:20:23"
+  },
+  {
+    "id": 4788,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:20:28"
+  },
+  {
+    "id": 4789,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:20:28"
+  },
+  {
+    "id": 4790,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:20:58"
+  },
+  {
+    "id": 4791,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112260.00",
+    "timestamp": "2025-08-25 20:21:24"
+  },
+  {
+    "id": 4792,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:21:28"
+  },
+  {
+    "id": 4793,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:21:28"
+  },
+  {
+    "id": 4794,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:21:58"
+  },
+  {
+    "id": 4795,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112250.00",
+    "timestamp": "2025-08-25 20:22:25"
+  },
+  {
+    "id": 4796,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:22:29"
+  },
+  {
+    "id": 4797,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:22:29"
+  },
+  {
+    "id": 4798,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:22:59"
+  },
+  {
+    "id": 4799,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112218.00",
+    "timestamp": "2025-08-25 20:23:26"
+  },
+  {
+    "id": 4800,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:23:30"
+  },
+  {
+    "id": 4801,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:23:30"
+  },
+  {
+    "id": 4802,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:24:00"
+  },
+  {
+    "id": 4803,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112218.00",
+    "timestamp": "2025-08-25 20:24:26"
+  },
+  {
+    "id": 4804,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:24:29"
+  },
+  {
+    "id": 4805,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:24:30"
+  },
+  {
+    "id": 4806,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:25:00"
+  },
+  {
+    "id": 4807,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112187.00",
+    "timestamp": "2025-08-25 20:25:27"
+  },
+  {
+    "id": 4808,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:25:30"
+  },
+  {
+    "id": 4809,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:25:31"
+  },
+  {
+    "id": 4810,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:26:01"
+  },
+  {
+    "id": 4811,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112239.00",
+    "timestamp": "2025-08-25 20:26:28"
+  },
+  {
+    "id": 4812,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:26:31"
+  },
+  {
+    "id": 4813,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:26:31"
+  },
+  {
+    "id": 4814,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:27:01"
+  },
+  {
+    "id": 4815,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112239.00",
+    "timestamp": "2025-08-25 20:27:28"
+  },
+  {
+    "id": 4816,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:27:31"
+  },
+  {
+    "id": 4817,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:27:31"
+  },
+  {
+    "id": 4818,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:28:01"
+  },
+  {
+    "id": 4819,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112188.00",
+    "timestamp": "2025-08-25 20:29:30"
+  },
+  {
+    "id": 4820,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:29:34"
+  },
+  {
+    "id": 4821,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:29:34"
+  },
+  {
+    "id": 4822,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:30:05"
+  },
+  {
+    "id": 4823,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112210.00",
+    "timestamp": "2025-08-25 20:30:30"
+  },
+  {
+    "id": 4824,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:30:34"
+  },
+  {
+    "id": 4825,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:30:34"
+  },
+  {
+    "id": 4826,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:31:04"
+  },
+  {
+    "id": 4827,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:31:23"
+  },
+  {
+    "id": 4828,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:31:33"
+  },
+  {
+    "id": 4829,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112259.00",
+    "timestamp": "2025-08-25 20:31:55"
+  },
+  {
+    "id": 4830,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:32:01"
+  },
+  {
+    "id": 4831,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:32:01"
+  },
+  {
+    "id": 4832,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 20:32:12",
+    "context": {
+      "session": "b1551b94"
+    }
+  },
+  {
+    "id": 4833,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 20:32:24",
+    "context": {
+      "session": "5ca65839"
+    }
+  },
+  {
+    "id": 4834,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:32:31"
+  },
+  {
+    "id": 4835,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112259.00",
+    "timestamp": "2025-08-25 20:32:31"
+  },
+  {
+    "id": 4836,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:32:36"
+  },
+  {
+    "id": 4837,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:32:36"
+  },
+  {
+    "id": 4838,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:33:06"
+  },
+  {
+    "id": 4839,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112266.00",
+    "timestamp": "2025-08-25 20:33:07"
+  },
+  {
+    "id": 4840,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:33:11"
+  },
+  {
+    "id": 4841,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:33:11"
+  },
+  {
+    "id": 4842,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:33:41"
+  },
+  {
+    "id": 4843,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112266.00",
+    "timestamp": "2025-08-25 20:33:41"
+  },
+  {
+    "id": 4844,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:33:46"
+  },
+  {
+    "id": 4845,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:33:46"
+  },
+  {
+    "id": 4846,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:34:16"
+  },
+  {
+    "id": 4847,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112263.00",
+    "timestamp": "2025-08-25 20:34:17"
+  },
+  {
+    "id": 4848,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:34:21"
+  },
+  {
+    "id": 4849,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:34:21"
+  },
+  {
+    "id": 4850,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:34:51"
+  },
+  {
+    "id": 4851,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112263.00",
+    "timestamp": "2025-08-25 20:34:51"
+  },
+  {
+    "id": 4852,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:34:55"
+  },
+  {
+    "id": 4853,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:34:55"
+  },
+  {
+    "id": 4854,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:35:26"
+  },
+  {
+    "id": 4855,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112205.00",
+    "timestamp": "2025-08-25 20:35:26"
+  },
+  {
+    "id": 4856,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:35:30"
+  },
+  {
+    "id": 4857,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:35:30"
+  },
+  {
+    "id": 4858,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:36:00"
+  },
+  {
+    "id": 4859,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112205.00",
+    "timestamp": "2025-08-25 20:36:00"
+  },
+  {
+    "id": 4860,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:36:05"
+  },
+  {
+    "id": 4861,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:36:05"
+  },
+  {
+    "id": 4862,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:36:35"
+  },
+  {
+    "id": 4863,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112165.00",
+    "timestamp": "2025-08-25 20:36:35"
+  },
+  {
+    "id": 4864,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:36:40"
+  },
+  {
+    "id": 4865,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:36:40"
+  },
+  {
+    "id": 4866,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:37:10"
+  },
+  {
+    "id": 4867,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112165.00",
+    "timestamp": "2025-08-25 20:37:10"
+  },
+  {
+    "id": 4868,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:37:14"
+  },
+  {
+    "id": 4869,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:37:14"
+  },
+  {
+    "id": 4870,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:37:44"
+  },
+  {
+    "id": 4871,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112182.00",
+    "timestamp": "2025-08-25 20:37:45"
+  },
+  {
+    "id": 4872,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:37:49"
+  },
+  {
+    "id": 4873,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:37:49"
+  },
+  {
+    "id": 4874,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:38:19"
+  },
+  {
+    "id": 4875,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112182.00",
+    "timestamp": "2025-08-25 20:38:19"
+  },
+  {
+    "id": 4876,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:38:23"
+  },
+  {
+    "id": 4877,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:38:23"
+  },
+  {
+    "id": 4878,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:38:53"
+  },
+  {
+    "id": 4879,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112220.00",
+    "timestamp": "2025-08-25 20:38:54"
+  },
+  {
+    "id": 4880,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:39:01"
+  },
+  {
+    "id": 4881,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:39:01"
+  },
+  {
+    "id": 4882,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:39:31"
+  },
+  {
+    "id": 4883,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112220.00",
+    "timestamp": "2025-08-25 20:39:31"
+  },
+  {
+    "id": 4884,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:39:35"
+  },
+  {
+    "id": 4885,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:39:35"
+  },
+  {
+    "id": 4886,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:40:05"
+  },
+  {
+    "id": 4887,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112207.00",
+    "timestamp": "2025-08-25 20:40:05"
+  },
+  {
+    "id": 4888,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:40:10"
+  },
+  {
+    "id": 4889,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:40:10"
+  },
+  {
+    "id": 4890,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:40:40"
+  },
+  {
+    "id": 4891,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112207.00",
+    "timestamp": "2025-08-25 20:40:40"
+  },
+  {
+    "id": 4892,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:40:44"
+  },
+  {
+    "id": 4893,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:40:44"
+  },
+  {
+    "id": 4894,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:41:14"
+  },
+  {
+    "id": 4895,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112057.00",
+    "timestamp": "2025-08-25 20:41:15"
+  },
+  {
+    "id": 4896,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:41:19"
+  },
+  {
+    "id": 4897,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:41:19"
+  },
+  {
+    "id": 4898,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:41:49"
+  },
+  {
+    "id": 4899,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112057.00",
+    "timestamp": "2025-08-25 20:41:49"
+  },
+  {
+    "id": 4900,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:41:53"
+  },
+  {
+    "id": 4901,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:41:53"
+  },
+  {
+    "id": 4902,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:42:23"
+  },
+  {
+    "id": 4903,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111933.00",
+    "timestamp": "2025-08-25 20:42:24"
+  },
+  {
+    "id": 4904,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:42:28"
+  },
+  {
+    "id": 4905,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:42:28"
+  },
+  {
+    "id": 4906,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:42:58"
+  },
+  {
+    "id": 4907,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111933.00",
+    "timestamp": "2025-08-25 20:42:59"
+  },
+  {
+    "id": 4908,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:43:04"
+  },
+  {
+    "id": 4909,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:43:04"
+  },
+  {
+    "id": 4910,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:43:34"
+  },
+  {
+    "id": 4911,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111933.00",
+    "timestamp": "2025-08-25 20:43:34"
+  },
+  {
+    "id": 4912,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:43:39"
+  },
+  {
+    "id": 4913,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 20:43:39"
+  },
+  {
+    "id": 4914,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:43:59"
+  },
+  {
+    "id": 4915,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111967.00",
+    "timestamp": "2025-08-25 20:44:00"
+  },
+  {
+    "id": 4916,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:44:04"
+  },
+  {
+    "id": 4917,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:44:04"
+  },
+  {
+    "id": 4918,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:44:05"
+  },
+  {
+    "id": 4919,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:44:06"
+  },
+  {
+    "id": 4920,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:44:06"
+  },
+  {
+    "id": 4921,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:44:36"
+  },
+  {
+    "id": 4922,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111962.00",
+    "timestamp": "2025-08-25 20:44:37"
+  },
+  {
+    "id": 4923,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:44:39"
+  },
+  {
+    "id": 4924,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:44:40"
+  },
+  {
+    "id": 4925,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:44:41"
+  },
+  {
+    "id": 4926,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:44:42"
+  },
+  {
+    "id": 4927,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:44:42"
+  },
+  {
+    "id": 4928,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:45:09"
+  },
+  {
+    "id": 4929,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111939.00",
+    "timestamp": "2025-08-25 20:45:10"
+  },
+  {
+    "id": 4930,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:45:14"
+  },
+  {
+    "id": 4931,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:45:15"
+  },
+  {
+    "id": 4932,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:45:16"
+  },
+  {
+    "id": 4933,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:45:17"
+  },
+  {
+    "id": 4934,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:45:17"
+  },
+  {
+    "id": 4935,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:45:47"
+  },
+  {
+    "id": 4936,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 111939.00",
+    "timestamp": "2025-08-25 20:45:47"
+  },
+  {
+    "id": 4937,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:45:50"
+  },
+  {
+    "id": 4938,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:45:51"
+  },
+  {
+    "id": 4939,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:45:52"
+  },
+  {
+    "id": 4940,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:45:53"
+  },
+  {
+    "id": 4941,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:45:53"
+  },
+  {
+    "id": 4942,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:46:23"
+  },
+  {
+    "id": 4943,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112003.00",
+    "timestamp": "2025-08-25 20:46:23"
+  },
+  {
+    "id": 4944,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:46:26"
+  },
+  {
+    "id": 4945,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:46:27"
+  },
+  {
+    "id": 4946,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:46:28"
+  },
+  {
+    "id": 4947,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:46:29"
+  },
+  {
+    "id": 4948,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:46:29"
+  },
+  {
+    "id": 4949,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:46:59"
+  },
+  {
+    "id": 4950,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112003.00",
+    "timestamp": "2025-08-25 20:46:59"
+  },
+  {
+    "id": 4951,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:47:02"
+  },
+  {
+    "id": 4952,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:47:03"
+  },
+  {
+    "id": 4953,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:47:04"
+  },
+  {
+    "id": 4954,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:47:05"
+  },
+  {
+    "id": 4955,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:47:05"
+  },
+  {
+    "id": 4956,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:47:35"
+  },
+  {
+    "id": 4957,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112074.00",
+    "timestamp": "2025-08-25 20:47:35"
+  },
+  {
+    "id": 4958,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:47:38"
+  },
+  {
+    "id": 4959,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:47:39"
+  },
+  {
+    "id": 4960,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:47:40"
+  },
+  {
+    "id": 4961,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:47:41"
+  },
+  {
+    "id": 4962,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:47:41"
+  },
+  {
+    "id": 4963,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:48:11"
+  },
+  {
+    "id": 4964,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112074.00",
+    "timestamp": "2025-08-25 20:48:11"
+  },
+  {
+    "id": 4965,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:48:13"
+  },
+  {
+    "id": 4966,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:48:14"
+  },
+  {
+    "id": 4967,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:48:15"
+  },
+  {
+    "id": 4968,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:48:16"
+  },
+  {
+    "id": 4969,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:48:16"
+  },
+  {
+    "id": 4970,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:48:46"
+  },
+  {
+    "id": 4971,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112180.00",
+    "timestamp": "2025-08-25 20:48:47"
+  },
+  {
+    "id": 4972,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:48:49"
+  },
+  {
+    "id": 4973,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:48:50"
+  },
+  {
+    "id": 4974,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:48:51"
+  },
+  {
+    "id": 4975,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:48:52"
+  },
+  {
+    "id": 4976,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:48:52"
+  },
+  {
+    "id": 4977,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:49:22"
+  },
+  {
+    "id": 4978,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112180.00",
+    "timestamp": "2025-08-25 20:49:22"
+  },
+  {
+    "id": 4979,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:49:24"
+  },
+  {
+    "id": 4980,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:49:25"
+  },
+  {
+    "id": 4981,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:49:26"
+  },
+  {
+    "id": 4982,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:49:27"
+  },
+  {
+    "id": 4983,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:49:27"
+  },
+  {
+    "id": 4984,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:49:57"
+  },
+  {
+    "id": 4985,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112263.00",
+    "timestamp": "2025-08-25 20:49:58"
+  },
+  {
+    "id": 4986,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:50:01"
+  },
+  {
+    "id": 4987,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:50:02"
+  },
+  {
+    "id": 4988,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:50:03"
+  },
+  {
+    "id": 4989,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:50:04"
+  },
+  {
+    "id": 4990,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:50:04"
+  },
+  {
+    "id": 4991,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:50:34"
+  },
+  {
+    "id": 4992,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112263.00",
+    "timestamp": "2025-08-25 20:50:34"
+  },
+  {
+    "id": 4993,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:50:37"
+  },
+  {
+    "id": 4994,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:50:38"
+  },
+  {
+    "id": 4995,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:50:39"
+  },
+  {
+    "id": 4996,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:50:39"
+  },
+  {
+    "id": 4997,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:50:39"
+  },
+  {
+    "id": 4998,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:51:09"
+  },
+  {
+    "id": 4999,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112266.00",
+    "timestamp": "2025-08-25 20:51:10"
+  },
+  {
+    "id": 5000,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:51:12"
+  },
+  {
+    "id": 5001,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:51:13"
+  },
+  {
+    "id": 5002,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:51:14"
+  },
+  {
+    "id": 5003,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:51:15"
+  },
+  {
+    "id": 5004,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:51:15"
+  },
+  {
+    "id": 5005,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:51:45"
+  },
+  {
+    "id": 5006,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112266.00",
+    "timestamp": "2025-08-25 20:51:45"
+  },
+  {
+    "id": 5007,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:51:48"
+  },
+  {
+    "id": 5008,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:51:49"
+  },
+  {
+    "id": 5009,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:51:50"
+  },
+  {
+    "id": 5010,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:51:51"
+  },
+  {
+    "id": 5011,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:51:51"
+  },
+  {
+    "id": 5012,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:52:15"
+  },
+  {
+    "id": 5013,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:52:21"
+  },
+  {
+    "id": 5014,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112296.00",
+    "timestamp": "2025-08-25 20:53:18"
+  },
+  {
+    "id": 5015,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112296.00",
+    "timestamp": "2025-08-25 20:53:19"
+  },
+  {
+    "id": 5016,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:53:21"
+  },
+  {
+    "id": 5017,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:53:22"
+  },
+  {
+    "id": 5018,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:53:22"
+  },
+  {
+    "id": 5019,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:53:22"
+  },
+  {
+    "id": 5020,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:53:23"
+  },
+  {
+    "id": 5021,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:53:23"
+  },
+  {
+    "id": 5022,
+    "type": "info",
+    "message": "Generated 4 alerts",
+    "timestamp": "2025-08-25 20:53:23"
+  },
+  {
+    "id": 5023,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:53:24"
+  },
+  {
+    "id": 5024,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:53:25"
+  },
+  {
+    "id": 5025,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:53:25"
+  },
+  {
+    "id": 5026,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:53:55"
+  },
+  {
+    "id": 5027,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112322.00",
+    "timestamp": "2025-08-25 20:54:19"
+  },
+  {
+    "id": 5028,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:54:22"
+  },
+  {
+    "id": 5029,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:54:23"
+  },
+  {
+    "id": 5030,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:54:24"
+  },
+  {
+    "id": 5031,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:54:25"
+  },
+  {
+    "id": 5032,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:54:25"
+  },
+  {
+    "id": 5033,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:54:55"
+  },
+  {
+    "id": 5034,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112322.00",
+    "timestamp": "2025-08-25 20:54:55"
+  },
+  {
+    "id": 5035,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:54:58"
+  },
+  {
+    "id": 5036,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:54:59"
+  },
+  {
+    "id": 5037,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:54:59"
+  },
+  {
+    "id": 5038,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:55:00"
+  },
+  {
+    "id": 5039,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:55:00"
+  },
+  {
+    "id": 5040,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:55:30"
+  },
+  {
+    "id": 5041,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112335.00",
+    "timestamp": "2025-08-25 20:55:31"
+  },
+  {
+    "id": 5042,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:55:33"
+  },
+  {
+    "id": 5043,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:55:34"
+  },
+  {
+    "id": 5044,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:55:35"
+  },
+  {
+    "id": 5045,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:55:36"
+  },
+  {
+    "id": 5046,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:55:36"
+  },
+  {
+    "id": 5047,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:56:01"
+  },
+  {
+    "id": 5048,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112335.00",
+    "timestamp": "2025-08-25 20:56:03"
+  },
+  {
+    "id": 5049,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:56:06"
+  },
+  {
+    "id": 5050,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:56:06"
+  },
+  {
+    "id": 5051,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112335.00",
+    "timestamp": "2025-08-25 20:56:06"
+  },
+  {
+    "id": 5052,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:56:07"
+  },
+  {
+    "id": 5053,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:56:08"
+  },
+  {
+    "id": 5054,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:56:09"
+  },
+  {
+    "id": 5055,
+    "type": "info",
+    "message": "Generated 4 alerts",
+    "timestamp": "2025-08-25 20:56:09"
+  },
+  {
+    "id": 5056,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:56:10"
+  },
+  {
+    "id": 5057,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:56:11"
+  },
+  {
+    "id": 5058,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:56:12"
+  },
+  {
+    "id": 5059,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:56:14"
+  },
+  {
+    "id": 5060,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:56:14"
+  },
+  {
+    "id": 5061,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:56:29"
+  },
+  {
+    "id": 5062,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 20:56:44"
+  },
+  {
+    "id": 5063,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112423.00",
+    "timestamp": "2025-08-25 20:58:26"
+  },
+  {
+    "id": 5064,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:58:30"
+  },
+  {
+    "id": 5065,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:58:31"
+  },
+  {
+    "id": 5066,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:58:32"
+  },
+  {
+    "id": 5067,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:58:33"
+  },
+  {
+    "id": 5068,
+    "type": "info",
+    "message": "Generated 4 alerts",
+    "timestamp": "2025-08-25 20:58:33"
+  },
+  {
+    "id": 5069,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112410.00",
+    "timestamp": "2025-08-25 20:59:28"
+  },
+  {
+    "id": 5070,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:59:31"
+  },
+  {
+    "id": 5071,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:59:32"
+  },
+  {
+    "id": 5072,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 20:59:33"
+  },
+  {
+    "id": 5073,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:59:34"
+  },
+  {
+    "id": 5074,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 20:59:34"
+  },
+  {
+    "id": 5075,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 20:59:36"
+  },
+  {
+    "id": 5076,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:00:04"
+  },
+  {
+    "id": 5077,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112401.00",
+    "timestamp": "2025-08-25 21:00:38"
+  },
+  {
+    "id": 5078,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112401.00",
+    "timestamp": "2025-08-25 21:00:39"
+  },
+  {
+    "id": 5079,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:00:41"
+  },
+  {
+    "id": 5080,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:00:42"
+  },
+  {
+    "id": 5081,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:00:42"
+  },
+  {
+    "id": 5082,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:00:43"
+  },
+  {
+    "id": 5083,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:00:43"
+  },
+  {
+    "id": 5084,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:00:44"
+  },
+  {
+    "id": 5085,
+    "type": "info",
+    "message": "Generated 4 alerts",
+    "timestamp": "2025-08-25 21:00:44"
+  },
+  {
+    "id": 5086,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:00:45"
+  },
+  {
+    "id": 5087,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:00:45"
+  },
+  {
+    "id": 5088,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 21:00:45"
+  },
+  {
+    "id": 5089,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:01:15"
+  },
+  {
+    "id": 5090,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112439.00",
+    "timestamp": "2025-08-25 21:01:40"
+  },
+  {
+    "id": 5091,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:01:42"
+  },
+  {
+    "id": 5092,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:01:43"
+  },
+  {
+    "id": 5093,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:01:44"
+  },
+  {
+    "id": 5094,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:01:45"
+  },
+  {
+    "id": 5095,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 21:01:45"
+  },
+  {
+    "id": 5096,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:02:15"
+  },
+  {
+    "id": 5097,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112439.00",
+    "timestamp": "2025-08-25 21:02:15"
+  },
+  {
+    "id": 5098,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:02:18"
+  },
+  {
+    "id": 5099,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:02:19"
+  },
+  {
+    "id": 5100,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:02:20"
+  },
+  {
+    "id": 5101,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:02:20"
+  },
+  {
+    "id": 5102,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 21:02:20"
+  },
+  {
+    "id": 5103,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:02:50"
+  },
+  {
+    "id": 5104,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112440.00",
+    "timestamp": "2025-08-25 21:02:51"
+  },
+  {
+    "id": 5105,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:02:54"
+  },
+  {
+    "id": 5106,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:02:55"
+  },
+  {
+    "id": 5107,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:02:56"
+  },
+  {
+    "id": 5108,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:02:57"
+  },
+  {
+    "id": 5109,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 21:02:57"
+  },
+  {
+    "id": 5110,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:03:27"
+  },
+  {
+    "id": 5111,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112440.00",
+    "timestamp": "2025-08-25 21:03:27"
+  },
+  {
+    "id": 5112,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:03:29"
+  },
+  {
+    "id": 5113,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:03:30"
+  },
+  {
+    "id": 5114,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:03:32"
+  },
+  {
+    "id": 5115,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:03:32"
+  },
+  {
+    "id": 5116,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 21:03:32"
+  },
+  {
+    "id": 5117,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:04:02"
+  },
+  {
+    "id": 5118,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112467.00",
+    "timestamp": "2025-08-25 21:04:03"
+  },
+  {
+    "id": 5119,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user1: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:04:05"
+  },
+  {
+    "id": 5120,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user2: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:04:06"
+  },
+  {
+    "id": 5121,
+    "type": "error",
+    "message": "ALERT [SUBSCRIPTION]: Error checking subscription for user3: 'list' object has no attribute 'get'",
+    "timestamp": "2025-08-25 21:04:07"
+  },
+  {
+    "id": 5122,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:04:08"
+  },
+  {
+    "id": 5123,
+    "type": "success",
+    "message": "\u2705 Generated 4 alerts automatically",
+    "timestamp": "2025-08-25 21:04:08"
+  },
+  {
+    "id": 5124,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:40:55"
+  },
+  {
+    "id": 5125,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112306.00",
+    "timestamp": "2025-08-25 21:40:56"
+  },
+  {
+    "id": 5126,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:40:58"
+  },
+  {
+    "id": 5127,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:41:01"
+  },
+  {
+    "id": 5128,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:41:01"
+  },
+  {
+    "id": 5129,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:41:31"
+  },
+  {
+    "id": 5130,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112335.00",
+    "timestamp": "2025-08-25 21:41:57"
+  },
+  {
+    "id": 5131,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:42:01"
+  },
+  {
+    "id": 5132,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:42:01"
+  },
+  {
+    "id": 5133,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:42:31"
+  },
+  {
+    "id": 5134,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112404.00",
+    "timestamp": "2025-08-25 21:43:58"
+  },
+  {
+    "id": 5135,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112404.00",
+    "timestamp": "2025-08-25 21:43:58"
+  },
+  {
+    "id": 5136,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:44:06"
+  },
+  {
+    "id": 5137,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:44:06"
+  },
+  {
+    "id": 5138,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:44:07"
+  },
+  {
+    "id": 5139,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 21:44:07"
+  },
+  {
+    "id": 5140,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:44:36"
+  },
+  {
+    "id": 5141,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112492.00",
+    "timestamp": "2025-08-25 21:45:59"
+  },
+  {
+    "id": 5142,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:46:04"
+  },
+  {
+    "id": 5143,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:46:04"
+  },
+  {
+    "id": 5144,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:46:34"
+  },
+  {
+    "id": 5145,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112537.00",
+    "timestamp": "2025-08-25 21:46:35"
+  },
+  {
+    "id": 5146,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:46:38"
+  },
+  {
+    "id": 5147,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:46:39"
+  },
+  {
+    "id": 5148,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:47:09"
+  },
+  {
+    "id": 5149,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112537.00",
+    "timestamp": "2025-08-25 21:47:09"
+  },
+  {
+    "id": 5150,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:47:13"
+  },
+  {
+    "id": 5151,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:47:13"
+  },
+  {
+    "id": 5152,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:47:43"
+  },
+  {
+    "id": 5153,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112576.00",
+    "timestamp": "2025-08-25 21:47:43"
+  },
+  {
+    "id": 5154,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:47:47"
+  },
+  {
+    "id": 5155,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:47:47"
+  },
+  {
+    "id": 5156,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:48:17"
+  },
+  {
+    "id": 5157,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112576.00",
+    "timestamp": "2025-08-25 21:48:18"
+  },
+  {
+    "id": 5158,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:48:22"
+  },
+  {
+    "id": 5159,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:48:22"
+  },
+  {
+    "id": 5160,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:48:52"
+  },
+  {
+    "id": 5161,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112624.00",
+    "timestamp": "2025-08-25 21:48:52"
+  },
+  {
+    "id": 5162,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:48:56"
+  },
+  {
+    "id": 5163,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:48:56"
+  },
+  {
+    "id": 5164,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:49:26"
+  },
+  {
+    "id": 5165,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112624.00",
+    "timestamp": "2025-08-25 21:49:26"
+  },
+  {
+    "id": 5166,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:49:30"
+  },
+  {
+    "id": 5167,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:49:30"
+  },
+  {
+    "id": 5168,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:50:00"
+  },
+  {
+    "id": 5169,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112652.00",
+    "timestamp": "2025-08-25 21:50:01"
+  },
+  {
+    "id": 5170,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:50:05"
+  },
+  {
+    "id": 5171,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:50:05"
+  },
+  {
+    "id": 5172,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:50:35"
+  },
+  {
+    "id": 5173,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112652.00",
+    "timestamp": "2025-08-25 21:50:35"
+  },
+  {
+    "id": 5174,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:50:39"
+  },
+  {
+    "id": 5175,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:50:39"
+  },
+  {
+    "id": 5176,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:51:09"
+  },
+  {
+    "id": 5177,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112660.00",
+    "timestamp": "2025-08-25 21:51:10"
+  },
+  {
+    "id": 5178,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:51:14"
+  },
+  {
+    "id": 5179,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:51:14"
+  },
+  {
+    "id": 5180,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:51:44"
+  },
+  {
+    "id": 5181,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112660.00",
+    "timestamp": "2025-08-25 21:51:44"
+  },
+  {
+    "id": 5182,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:51:48"
+  },
+  {
+    "id": 5183,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:51:48"
+  },
+  {
+    "id": 5184,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:51:48"
+  },
+  {
+    "id": 5185,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112660.00",
+    "timestamp": "2025-08-25 21:51:50"
+  },
+  {
+    "id": 5186,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:51:53"
+  },
+  {
+    "id": 5187,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 21:51:53"
+  },
+  {
+    "id": 5188,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:51:59"
+  },
+  {
+    "id": 5189,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:52:18"
+  },
+  {
+    "id": 5190,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112683.00",
+    "timestamp": "2025-08-25 21:52:57"
+  },
+  {
+    "id": 5191,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:53:01"
+  },
+  {
+    "id": 5192,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:53:01"
+  },
+  {
+    "id": 5193,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:53:31"
+  },
+  {
+    "id": 5194,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112782.00",
+    "timestamp": "2025-08-25 21:53:58"
+  },
+  {
+    "id": 5195,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112782.00",
+    "timestamp": "2025-08-25 21:53:58"
+  },
+  {
+    "id": 5196,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:54:02"
+  },
+  {
+    "id": 5197,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 21:54:02"
+  },
+  {
+    "id": 5198,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:54:02"
+  },
+  {
+    "id": 5199,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:54:02"
+  },
+  {
+    "id": 5200,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:54:32"
+  },
+  {
+    "id": 5201,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112853.00",
+    "timestamp": "2025-08-25 21:55:00"
+  },
+  {
+    "id": 5202,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:55:04"
+  },
+  {
+    "id": 5203,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:55:04"
+  },
+  {
+    "id": 5204,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:55:11"
+  },
+  {
+    "id": 5205,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:55:34"
+  },
+  {
+    "id": 5206,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 21:55:42",
+    "context": {
+      "session": "ea70c3e4"
+    }
+  },
+  {
+    "id": 5207,
+    "type": "action",
+    "message": "Agent query",
+    "timestamp": "2025-08-25 21:55:49",
+    "context": {
+      "session": "2bdb8036",
+      "mode": "api",
+      "user": "user1",
+      "query": "\ud83d\udd14 Alerts",
+      "executed_tools": []
+    }
+  },
+  {
+    "id": 5208,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112818.00",
+    "timestamp": "2025-08-25 21:56:08"
+  },
+  {
+    "id": 5209,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112818.00",
+    "timestamp": "2025-08-25 21:56:09"
+  },
+  {
+    "id": 5210,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:56:12"
+  },
+  {
+    "id": 5211,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:56:12"
+  },
+  {
+    "id": 5212,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:56:13"
+  },
+  {
+    "id": 5213,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 21:56:13"
+  },
+  {
+    "id": 5214,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:56:42"
+  },
+  {
+    "id": 5215,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112780.00",
+    "timestamp": "2025-08-25 21:58:10"
+  },
+  {
+    "id": 5216,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:58:14"
+  },
+  {
+    "id": 5217,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 21:58:14"
+  },
+  {
+    "id": 5218,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 21:58:44"
+  },
+  {
+    "id": 5219,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:58:53"
+  },
+  {
+    "id": 5220,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112733.00",
+    "timestamp": "2025-08-25 21:59:10"
+  },
+  {
+    "id": 5221,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 21:59:15"
+  },
+  {
+    "id": 5222,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 21:59:15"
+  },
+  {
+    "id": 5223,
+    "type": "action",
+    "message": "Agent query",
+    "timestamp": "2025-08-25 21:59:37",
+    "context": {
+      "session": "a34c2f38",
+      "mode": "api",
+      "user": "user1",
+      "query": "\ud83d\udd14 Alerts",
+      "executed_tools": []
+    }
+  },
+  {
+    "id": 5224,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112718.00",
+    "timestamp": "2025-08-25 22:00:10"
+  },
+  {
+    "id": 5225,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112718.00",
+    "timestamp": "2025-08-25 22:00:11"
+  },
+  {
+    "id": 5226,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:00:15"
+  },
+  {
+    "id": 5227,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:00:15"
+  },
+  {
+    "id": 5228,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:00:16"
+  },
+  {
+    "id": 5229,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:00:16"
+  },
+  {
+    "id": 5230,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:00:45"
+  },
+  {
+    "id": 5231,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112667.00",
+    "timestamp": "2025-08-25 22:01:12"
+  },
+  {
+    "id": 5232,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:01:15"
+  },
+  {
+    "id": 5233,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:01:15"
+  },
+  {
+    "id": 5234,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:01:45"
+  },
+  {
+    "id": 5235,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112648.00",
+    "timestamp": "2025-08-25 22:02:11"
+  },
+  {
+    "id": 5236,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:02:15"
+  },
+  {
+    "id": 5237,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:02:15"
+  },
+  {
+    "id": 5238,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:02:45"
+  },
+  {
+    "id": 5239,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112664.00",
+    "timestamp": "2025-08-25 22:03:12"
+  },
+  {
+    "id": 5240,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:03:17"
+  },
+  {
+    "id": 5241,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:03:17"
+  },
+  {
+    "id": 5242,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112664.00",
+    "timestamp": "2025-08-25 22:04:11"
+  },
+  {
+    "id": 5243,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112600.00",
+    "timestamp": "2025-08-25 22:04:12"
+  },
+  {
+    "id": 5244,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:04:16"
+  },
+  {
+    "id": 5245,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:04:16"
+  },
+  {
+    "id": 5246,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:04:16"
+  },
+  {
+    "id": 5247,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:04:16"
+  },
+  {
+    "id": 5248,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:09:36"
+  },
+  {
+    "id": 5249,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112701.00",
+    "timestamp": "2025-08-25 22:09:37"
+  },
+  {
+    "id": 5250,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:09:37"
+  },
+  {
+    "id": 5251,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:09:40"
+  },
+  {
+    "id": 5252,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:09:40"
+  },
+  {
+    "id": 5253,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:10:10"
+  },
+  {
+    "id": 5254,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112701.00",
+    "timestamp": "2025-08-25 22:10:38"
+  },
+  {
+    "id": 5255,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112701.00",
+    "timestamp": "2025-08-25 22:10:38"
+  },
+  {
+    "id": 5256,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:10:40"
+  },
+  {
+    "id": 5257,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:10:40"
+  },
+  {
+    "id": 5258,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:10:41"
+  },
+  {
+    "id": 5259,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:10:41"
+  },
+  {
+    "id": 5260,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:10:51"
+  },
+  {
+    "id": 5261,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112701.00",
+    "timestamp": "2025-08-25 22:10:52"
+  },
+  {
+    "id": 5262,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:10:54"
+  },
+  {
+    "id": 5263,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:10:54"
+  },
+  {
+    "id": 5264,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:11:24"
+  },
+  {
+    "id": 5265,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112751.00",
+    "timestamp": "2025-08-25 22:11:52"
+  },
+  {
+    "id": 5266,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:11:54"
+  },
+  {
+    "id": 5267,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:11:54"
+  },
+  {
+    "id": 5268,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:12:24"
+  },
+  {
+    "id": 5269,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:12:48"
+  },
+  {
+    "id": 5270,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112751.00",
+    "timestamp": "2025-08-25 22:12:52"
+  },
+  {
+    "id": 5271,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:12:55"
+  },
+  {
+    "id": 5272,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:12:55"
+  },
+  {
+    "id": 5273,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:13:25"
+  },
+  {
+    "id": 5274,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 22:13:31",
+    "context": {
+      "session": "8e5d42c9"
+    }
+  },
+  {
+    "id": 5275,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 22:13:38",
+    "context": {
+      "session": "9b5c2c5e"
+    }
+  },
+  {
+    "id": 5276,
+    "type": "action",
+    "message": "Agent query",
+    "timestamp": "2025-08-25 22:13:39",
+    "context": {
+      "session": "5338477c",
+      "mode": "api",
+      "user": "user1",
+      "query": "Subscription Netflix was paused. Should I suggest renewal?",
+      "executed_tools": []
+    }
+  },
+  {
+    "id": 5277,
+    "type": "action",
+    "message": "Agent query",
+    "timestamp": "2025-08-25 22:13:40",
+    "context": {
+      "session": "bffe2dc6",
+      "mode": "api",
+      "user": "user1",
+      "query": "Subscription Apple Music was resumed.",
+      "executed_tools": []
+    }
+  },
+  {
+    "id": 5278,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 22:13:42",
+    "context": {
+      "session": "c76bb2f5"
+    }
+  },
+  {
+    "id": 5279,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112751.00",
+    "timestamp": "2025-08-25 22:13:53"
+  },
+  {
+    "id": 5280,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112773.00",
+    "timestamp": "2025-08-25 22:13:54"
+  },
+  {
+    "id": 5281,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:13:56"
+  },
+  {
+    "id": 5282,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:13:56"
+  },
+  {
+    "id": 5283,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:13:57"
+  },
+  {
+    "id": 5284,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:13:57"
+  },
+  {
+    "id": 5285,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 22:14:04",
+    "context": {
+      "session": "1b00cb82"
+    }
+  },
+  {
+    "id": 5286,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 22:14:05",
+    "context": {
+      "session": "75963c2c"
+    }
+  },
+  {
+    "id": 5287,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 22:14:09",
+    "context": {
+      "session": "d059c985"
+    }
+  },
+  {
+    "id": 5288,
+    "type": "action",
+    "message": "Agent query",
+    "timestamp": "2025-08-25 22:14:09",
+    "context": {
+      "session": "cfeac1bf",
+      "mode": "api",
+      "user": "user1",
+      "query": "Subscription Amazon Prime was resumed.",
+      "executed_tools": []
+    }
+  },
+  {
+    "id": 5289,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 22:14:14",
+    "context": {
+      "session": "438e10e0"
+    }
+  },
+  {
+    "id": 5290,
+    "type": "action",
+    "message": "Agent query",
+    "timestamp": "2025-08-25 22:14:24",
+    "context": {
+      "session": "20bf8f5d",
+      "mode": "api",
+      "user": "user1",
+      "query": "Subscription Apple Music was paused. Should I suggest renewal?",
+      "executed_tools": []
+    }
+  },
+  {
+    "id": 5291,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:14:27"
+  },
+  {
+    "id": 5292,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112751.00",
+    "timestamp": "2025-08-25 22:14:27"
+  },
+  {
+    "id": 5293,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:14:29"
+  },
+  {
+    "id": 5294,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:14:29"
+  },
+  {
+    "id": 5295,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:14:29"
+  },
+  {
+    "id": 5296,
+    "type": "action",
+    "message": "Agent query",
+    "timestamp": "2025-08-25 22:14:33",
+    "context": {
+      "session": "d4602069",
+      "mode": "api",
+      "user": "user1",
+      "query": "Subscription Apple Music was resumed.",
+      "executed_tools": []
+    }
+  },
+  {
+    "id": 5297,
+    "type": "action",
+    "message": "Agent query",
+    "timestamp": "2025-08-25 22:14:34",
+    "context": {
+      "session": "f58c4eb2",
+      "mode": "api",
+      "user": "user1",
+      "query": "Subscription Amazon Prime was resumed.",
+      "executed_tools": []
+    }
+  },
+  {
+    "id": 5298,
+    "type": "action",
+    "message": "Agent query",
+    "timestamp": "2025-08-25 22:14:38",
+    "context": {
+      "session": "2c181199",
+      "mode": "api",
+      "user": "user1",
+      "query": "Subscription Amazon Prime was resumed.",
+      "executed_tools": []
+    }
+  },
+  {
+    "id": 5299,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 22:14:39",
+    "context": {
+      "session": "15b9444b"
+    }
+  },
+  {
+    "id": 5300,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 22:14:44",
+    "context": {
+      "session": "21d81de2"
+    }
+  },
+  {
+    "id": 5301,
+    "type": "action",
+    "message": "Agent query",
+    "timestamp": "2025-08-25 22:14:50",
+    "context": {
+      "session": "8e4051d3",
+      "mode": "api",
+      "user": "user1",
+      "query": "Subscription Amazon Prime was resumed.",
+      "executed_tools": []
+    }
+  },
+  {
+    "id": 5302,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:14:59"
+  },
+  {
+    "id": 5303,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112708.00",
+    "timestamp": "2025-08-25 22:15:28"
+  },
+  {
+    "id": 5304,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112708.00",
+    "timestamp": "2025-08-25 22:15:28"
+  },
+  {
+    "id": 5305,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:15:30"
+  },
+  {
+    "id": 5306,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:15:30"
+  },
+  {
+    "id": 5307,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:15:30"
+  },
+  {
+    "id": 5308,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:15:30"
+  },
+  {
+    "id": 5309,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:16:00"
+  },
+  {
+    "id": 5310,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112708.00",
+    "timestamp": "2025-08-25 22:16:28"
+  },
+  {
+    "id": 5311,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112700.00",
+    "timestamp": "2025-08-25 22:16:29"
+  },
+  {
+    "id": 5312,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:16:30"
+  },
+  {
+    "id": 5313,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:16:30"
+  },
+  {
+    "id": 5314,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:16:31"
+  },
+  {
+    "id": 5315,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:16:31"
+  },
+  {
+    "id": 5316,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:17:00"
+  },
+  {
+    "id": 5317,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112725.00",
+    "timestamp": "2025-08-25 22:17:29"
+  },
+  {
+    "id": 5318,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:17:31"
+  },
+  {
+    "id": 5319,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:17:31"
+  },
+  {
+    "id": 5320,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:18:01"
+  },
+  {
+    "id": 5321,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112761.00",
+    "timestamp": "2025-08-25 22:18:29"
+  },
+  {
+    "id": 5322,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112761.00",
+    "timestamp": "2025-08-25 22:18:30"
+  },
+  {
+    "id": 5323,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:18:31"
+  },
+  {
+    "id": 5324,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:18:31"
+  },
+  {
+    "id": 5325,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:18:33"
+  },
+  {
+    "id": 5326,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:18:33"
+  },
+  {
+    "id": 5327,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:18:45"
+  },
+  {
+    "id": 5328,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112725.00",
+    "timestamp": "2025-08-25 22:18:46"
+  },
+  {
+    "id": 5329,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:18:49"
+  },
+  {
+    "id": 5330,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:18:49"
+  },
+  {
+    "id": 5331,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:19:19"
+  },
+  {
+    "id": 5332,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112706.00",
+    "timestamp": "2025-08-25 22:20:47"
+  },
+  {
+    "id": 5333,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:20:49"
+  },
+  {
+    "id": 5334,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:20:49"
+  },
+  {
+    "id": 5335,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:21:20"
+  },
+  {
+    "id": 5336,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112661.00",
+    "timestamp": "2025-08-25 22:21:48"
+  },
+  {
+    "id": 5337,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:21:50"
+  },
+  {
+    "id": 5338,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:21:50"
+  },
+  {
+    "id": 5339,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:22:07"
+  },
+  {
+    "id": 5340,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112661.00",
+    "timestamp": "2025-08-25 22:22:08"
+  },
+  {
+    "id": 5341,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:22:10"
+  },
+  {
+    "id": 5342,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:22:10"
+  },
+  {
+    "id": 5343,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:22:40"
+  },
+  {
+    "id": 5344,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112606.00",
+    "timestamp": "2025-08-25 22:23:08"
+  },
+  {
+    "id": 5345,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:23:10"
+  },
+  {
+    "id": 5346,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:23:10"
+  },
+  {
+    "id": 5347,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:23:39"
+  },
+  {
+    "id": 5348,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112635.00",
+    "timestamp": "2025-08-25 22:24:09"
+  },
+  {
+    "id": 5349,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:24:11"
+  },
+  {
+    "id": 5350,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:24:11"
+  },
+  {
+    "id": 5351,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:24:41"
+  },
+  {
+    "id": 5352,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112635.00",
+    "timestamp": "2025-08-25 22:24:41"
+  },
+  {
+    "id": 5353,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:24:43"
+  },
+  {
+    "id": 5354,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:24:43"
+  },
+  {
+    "id": 5355,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:25:13"
+  },
+  {
+    "id": 5356,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112537.00",
+    "timestamp": "2025-08-25 22:25:13"
+  },
+  {
+    "id": 5357,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:25:15"
+  },
+  {
+    "id": 5358,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:25:15"
+  },
+  {
+    "id": 5359,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:25:48"
+  },
+  {
+    "id": 5360,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112537.00",
+    "timestamp": "2025-08-25 22:25:49"
+  },
+  {
+    "id": 5361,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:25:49"
+  },
+  {
+    "id": 5362,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:25:51"
+  },
+  {
+    "id": 5363,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:25:51"
+  },
+  {
+    "id": 5364,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:26:21"
+  },
+  {
+    "id": 5365,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112556.00",
+    "timestamp": "2025-08-25 22:26:49"
+  },
+  {
+    "id": 5366,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112556.00",
+    "timestamp": "2025-08-25 22:26:49"
+  },
+  {
+    "id": 5367,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:26:51"
+  },
+  {
+    "id": 5368,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:26:51"
+  },
+  {
+    "id": 5369,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:26:51"
+  },
+  {
+    "id": 5370,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:26:51"
+  },
+  {
+    "id": 5371,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:26:59"
+  },
+  {
+    "id": 5372,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112528.00",
+    "timestamp": "2025-08-25 22:27:00"
+  },
+  {
+    "id": 5373,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:27:02"
+  },
+  {
+    "id": 5374,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:27:02"
+  },
+  {
+    "id": 5375,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:27:32"
+  },
+  {
+    "id": 5376,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112559.00",
+    "timestamp": "2025-08-25 22:28:01"
+  },
+  {
+    "id": 5377,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:28:03"
+  },
+  {
+    "id": 5378,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:28:03"
+  },
+  {
+    "id": 5379,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:28:12"
+  },
+  {
+    "id": 5380,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:28:13"
+  },
+  {
+    "id": 5381,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112559.00",
+    "timestamp": "2025-08-25 22:28:13"
+  },
+  {
+    "id": 5382,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:28:16"
+  },
+  {
+    "id": 5383,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:28:16"
+  },
+  {
+    "id": 5384,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:28:46"
+  },
+  {
+    "id": 5385,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 22:28:56",
+    "context": {
+      "session": "81492f41"
+    }
+  },
+  {
+    "id": 5386,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112579.00",
+    "timestamp": "2025-08-25 22:29:16"
+  },
+  {
+    "id": 5387,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:29:17"
+  },
+  {
+    "id": 5388,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:29:17"
+  },
+  {
+    "id": 5389,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112579.00",
+    "timestamp": "2025-08-25 22:30:15"
+  },
+  {
+    "id": 5390,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112579.00",
+    "timestamp": "2025-08-25 22:30:16"
+  },
+  {
+    "id": 5391,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:30:18"
+  },
+  {
+    "id": 5392,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:30:18"
+  },
+  {
+    "id": 5393,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:30:19"
+  },
+  {
+    "id": 5394,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:30:19"
+  },
+  {
+    "id": 5395,
+    "type": "error",
+    "message": "Agent timeout",
+    "timestamp": "2025-08-25 22:30:42",
+    "context": {
+      "session": "6d89cff2"
+    }
+  },
+  {
+    "id": 5396,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:30:49"
+  },
+  {
+    "id": 5397,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112464.00",
+    "timestamp": "2025-08-25 22:34:16"
+  },
+  {
+    "id": 5398,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:34:18"
+  },
+  {
+    "id": 5399,
+    "type": "info",
+    "message": "Generated 1 alerts",
+    "timestamp": "2025-08-25 22:34:18"
+  },
+  {
+    "id": 5400,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:34:27"
+  },
+  {
+    "id": 5401,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:34:57"
+  },
+  {
+    "id": 5402,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112288.00",
+    "timestamp": "2025-08-25 22:37:19"
+  },
+  {
+    "id": 5403,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:37:21"
+  },
+  {
+    "id": 5404,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:37:21"
+  },
+  {
+    "id": 5405,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:37:51"
+  },
+  {
+    "id": 5406,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112256.00",
+    "timestamp": "2025-08-25 22:38:19"
+  },
+  {
+    "id": 5407,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:38:21"
+  },
+  {
+    "id": 5408,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:38:21"
+  },
+  {
+    "id": 5409,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:38:51"
+  },
+  {
+    "id": 5410,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112368.00",
+    "timestamp": "2025-08-25 22:39:20"
+  },
+  {
+    "id": 5411,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:39:22"
+  },
+  {
+    "id": 5412,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:39:22"
+  },
+  {
+    "id": 5413,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:39:52"
+  },
+  {
+    "id": 5414,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112487.00",
+    "timestamp": "2025-08-25 22:42:21"
+  },
+  {
+    "id": 5415,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:42:23"
+  },
+  {
+    "id": 5416,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:42:23"
+  },
+  {
+    "id": 5417,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:42:53"
+  },
+  {
+    "id": 5418,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112487.00",
+    "timestamp": "2025-08-25 22:43:20"
+  },
+  {
+    "id": 5419,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:43:23"
+  },
+  {
+    "id": 5420,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:43:23"
+  },
+  {
+    "id": 5421,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:43:53"
+  },
+  {
+    "id": 5422,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112538.00",
+    "timestamp": "2025-08-25 22:44:21"
+  },
+  {
+    "id": 5423,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:44:23"
+  },
+  {
+    "id": 5424,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:44:23"
+  },
+  {
+    "id": 5425,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:44:53"
+  },
+  {
+    "id": 5426,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112559.00",
+    "timestamp": "2025-08-25 22:45:21"
+  },
+  {
+    "id": 5427,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:45:24"
+  },
+  {
+    "id": 5428,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:45:24"
+  },
+  {
+    "id": 5429,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:45:54"
+  },
+  {
+    "id": 5430,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112551.00",
+    "timestamp": "2025-08-25 22:46:22"
+  },
+  {
+    "id": 5431,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:46:25"
+  },
+  {
+    "id": 5432,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:46:25"
+  },
+  {
+    "id": 5433,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:46:55"
+  },
+  {
+    "id": 5434,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112485.00",
+    "timestamp": "2025-08-25 22:47:22"
+  },
+  {
+    "id": 5435,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:47:25"
+  },
+  {
+    "id": 5436,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:47:25"
+  },
+  {
+    "id": 5437,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:47:55"
+  },
+  {
+    "id": 5438,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112430.00",
+    "timestamp": "2025-08-25 22:48:23"
+  },
+  {
+    "id": 5439,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:48:26"
+  },
+  {
+    "id": 5440,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:48:26"
+  },
+  {
+    "id": 5441,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:48:56"
+  },
+  {
+    "id": 5442,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112415.00",
+    "timestamp": "2025-08-25 22:49:23"
+  },
+  {
+    "id": 5443,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:49:26"
+  },
+  {
+    "id": 5444,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:49:26"
+  },
+  {
+    "id": 5445,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:49:56"
+  },
+  {
+    "id": 5446,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112426.00",
+    "timestamp": "2025-08-25 22:51:24"
+  },
+  {
+    "id": 5447,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:51:26"
+  },
+  {
+    "id": 5448,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:51:26"
+  },
+  {
+    "id": 5449,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:51:56"
+  },
+  {
+    "id": 5450,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112426.00",
+    "timestamp": "2025-08-25 22:52:24"
+  },
+  {
+    "id": 5451,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:52:26"
+  },
+  {
+    "id": 5452,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:52:26"
+  },
+  {
+    "id": 5453,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:52:56"
+  },
+  {
+    "id": 5454,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112587.00",
+    "timestamp": "2025-08-25 22:56:25"
+  },
+  {
+    "id": 5455,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:56:28"
+  },
+  {
+    "id": 5456,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:56:28"
+  },
+  {
+    "id": 5457,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:56:58"
+  },
+  {
+    "id": 5458,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112622.00",
+    "timestamp": "2025-08-25 22:57:25"
+  },
+  {
+    "id": 5459,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:57:28"
+  },
+  {
+    "id": 5460,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:57:28"
+  },
+  {
+    "id": 5461,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:57:58"
+  },
+  {
+    "id": 5462,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112622.00",
+    "timestamp": "2025-08-25 22:58:25"
+  },
+  {
+    "id": 5463,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:58:29"
+  },
+  {
+    "id": 5464,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:58:29"
+  },
+  {
+    "id": 5465,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:58:59"
+  },
+  {
+    "id": 5466,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112699.00",
+    "timestamp": "2025-08-25 22:59:27"
+  },
+  {
+    "id": 5467,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 22:59:29"
+  },
+  {
+    "id": 5468,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 22:59:29"
+  },
+  {
+    "id": 5469,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 22:59:59"
+  },
+  {
+    "id": 5470,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112699.00",
+    "timestamp": "2025-08-25 23:00:26"
+  },
+  {
+    "id": 5471,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:00:30"
+  },
+  {
+    "id": 5472,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:00:30"
+  },
+  {
+    "id": 5473,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:01:00"
+  },
+  {
+    "id": 5474,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112597.00",
+    "timestamp": "2025-08-25 23:03:26"
+  },
+  {
+    "id": 5475,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:03:29"
+  },
+  {
+    "id": 5476,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:03:29"
+  },
+  {
+    "id": 5477,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:03:59"
+  },
+  {
+    "id": 5478,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:07:31"
+  },
+  {
+    "id": 5479,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:08:01"
+  },
+  {
+    "id": 5480,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112552.00",
+    "timestamp": "2025-08-25 23:10:29"
+  },
+  {
+    "id": 5481,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:10:31"
+  },
+  {
+    "id": 5482,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:10:31"
+  },
+  {
+    "id": 5483,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:11:01"
+  },
+  {
+    "id": 5484,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112564.00",
+    "timestamp": "2025-08-25 23:11:30"
+  },
+  {
+    "id": 5485,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:11:32"
+  },
+  {
+    "id": 5486,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:11:32"
+  },
+  {
+    "id": 5487,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:12:02"
+  },
+  {
+    "id": 5488,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112541.00",
+    "timestamp": "2025-08-25 23:12:29"
+  },
+  {
+    "id": 5489,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:12:32"
+  },
+  {
+    "id": 5490,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:12:32"
+  },
+  {
+    "id": 5491,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:13:02"
+  },
+  {
+    "id": 5492,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112457.00",
+    "timestamp": "2025-08-25 23:15:32"
+  },
+  {
+    "id": 5493,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:15:34"
+  },
+  {
+    "id": 5494,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:15:34"
+  },
+  {
+    "id": 5495,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:16:04"
+  },
+  {
+    "id": 5496,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112466.00",
+    "timestamp": "2025-08-25 23:16:32"
+  },
+  {
+    "id": 5497,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:16:35"
+  },
+  {
+    "id": 5498,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:16:35"
+  },
+  {
+    "id": 5499,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:17:05"
+  },
+  {
+    "id": 5500,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112456.00",
+    "timestamp": "2025-08-25 23:17:33"
+  },
+  {
+    "id": 5501,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:17:36"
+  },
+  {
+    "id": 5502,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:17:36"
+  },
+  {
+    "id": 5503,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:18:06"
+  },
+  {
+    "id": 5504,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112488.00",
+    "timestamp": "2025-08-25 23:18:34"
+  },
+  {
+    "id": 5505,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:18:36"
+  },
+  {
+    "id": 5506,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:18:36"
+  },
+  {
+    "id": 5507,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:19:06"
+  },
+  {
+    "id": 5508,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112359.00",
+    "timestamp": "2025-08-25 23:20:35"
+  },
+  {
+    "id": 5509,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:20:37"
+  },
+  {
+    "id": 5510,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:20:37"
+  },
+  {
+    "id": 5511,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:21:07"
+  },
+  {
+    "id": 5512,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112370.00",
+    "timestamp": "2025-08-25 23:21:36"
+  },
+  {
+    "id": 5513,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:21:38"
+  },
+  {
+    "id": 5514,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:21:38"
+  },
+  {
+    "id": 5515,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:22:08"
+  },
+  {
+    "id": 5516,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112363.00",
+    "timestamp": "2025-08-25 23:22:35"
+  },
+  {
+    "id": 5517,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:22:37"
+  },
+  {
+    "id": 5518,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:22:37"
+  },
+  {
+    "id": 5519,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:23:07"
+  },
+  {
+    "id": 5520,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112397.00",
+    "timestamp": "2025-08-25 23:23:36"
+  },
+  {
+    "id": 5521,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:23:38"
+  },
+  {
+    "id": 5522,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:23:38"
+  },
+  {
+    "id": 5523,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:24:08"
+  },
+  {
+    "id": 5524,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112462.00",
+    "timestamp": "2025-08-25 23:24:36"
+  },
+  {
+    "id": 5525,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:24:39"
+  },
+  {
+    "id": 5526,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:24:39"
+  },
+  {
+    "id": 5527,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:25:09"
+  },
+  {
+    "id": 5528,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112518.00",
+    "timestamp": "2025-08-25 23:26:38"
+  },
+  {
+    "id": 5529,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:26:41"
+  },
+  {
+    "id": 5530,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:26:41"
+  },
+  {
+    "id": 5531,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:27:11"
+  },
+  {
+    "id": 5532,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112479.00",
+    "timestamp": "2025-08-25 23:27:39"
+  },
+  {
+    "id": 5533,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:27:42"
+  },
+  {
+    "id": 5534,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:27:42"
+  },
+  {
+    "id": 5535,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:28:12"
+  },
+  {
+    "id": 5536,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112543.00",
+    "timestamp": "2025-08-25 23:29:40"
+  },
+  {
+    "id": 5537,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:29:42"
+  },
+  {
+    "id": 5538,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:29:43"
+  },
+  {
+    "id": 5539,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:30:13"
+  },
+  {
+    "id": 5540,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112478.00",
+    "timestamp": "2025-08-25 23:30:41"
+  },
+  {
+    "id": 5541,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:30:43"
+  },
+  {
+    "id": 5542,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:30:43"
+  },
+  {
+    "id": 5543,
+    "type": "info",
+    "message": "\ud83d\udd04 Running periodic alert check",
+    "timestamp": "2025-08-25 23:31:13"
+  },
+  {
+    "id": 5544,
+    "type": "info",
+    "message": "ALERT [CRYPTO]: BTC crossed $70K! Current: 112418.00",
+    "timestamp": "2025-08-25 23:32:42"
+  },
+  {
+    "id": 5545,
+    "type": "error",
+    "message": "Circle GET /balances failed: 401 Client Error: Unauthorized for url: https://api-sandbox.circle.com/v1/balances",
+    "timestamp": "2025-08-25 23:32:44"
+  },
+  {
+    "id": 5546,
+    "type": "success",
+    "message": "\u2705 Generated 1 alerts automatically",
+    "timestamp": "2025-08-25 23:32:44"
+  }
+]
