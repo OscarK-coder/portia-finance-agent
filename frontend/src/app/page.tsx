@@ -2,41 +2,44 @@
 
 import { useState, useEffect, useRef } from "react";
 
-import AuditLog, { LogEntry } from "@/components/dashboard/AuditLog";
+import AuditLog from "@/components/dashboard/AuditLog";
+import type { LogEntry } from "@/types/audit-log";
+
 import KpiRow from "@/components/dashboard/KpiRow";
 import Markets from "@/components/dashboard/Markets";
+import Alerts from "@/components/dashboard/Alerts";
 import Wallets from "@/components/dashboard/Wallets";
 import SubscriptionPanel from "@/components/dashboard/SubscriptionPanel";
-import TreasuryPanel from "@/components/dashboard/TreasuryPanel";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import TopNavbar from "@/components/TopNavBar";
 import AiPanel from "@/components/PortiaConsole/AiPanel";
 
-import {
-  getSubscriptions,
-  pauseSubscription,
-  resumeSubscription,
-  cancelSubscription,
-  getCircleBalances,
-  getWalletBalance,
-  getAlerts,
-  getLogs,
-  type Subscription,
-  type SubscriptionResponse,
-  type Alert,
-} from "@/lib/api";
+import { getLogs, type Subscription } from "@/lib/api";
+import { mockAlerts } from "@/lib/mockAlerts";
+import { MOCK_SUBSCRIPTIONS } from "@/lib/mockSubscriptions";
+
+import type { Alert } from "@/lib/api";
+
+const uniqueId = () => Date.now() + Math.floor(Math.random() * 1000);
+
+/* Smooth scroll helper with offset for navbar */
+function scrollToSection(id: string) {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  const yOffset = -56; // h-14 navbar height
+  const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
+
+  window.scrollTo({ top: y, behavior: "smooth" });
+}
 
 export default function Page() {
   const [logs, setLogs] = useState<LogEntry[]>([]);
-  const [alerts, setAlerts] = useState<Alert[]>([]);
+  const [alerts, setAlerts] = useState<Alert[]>(mockAlerts);
   const [isConsoleOpen, setIsConsoleOpen] = useState(false);
-  const [subscriptions, setSubscriptions] = useState<Subscription[]>([]);
-  const [stripeBalance, setStripeBalance] = useState<number>(0);
-  const [treasury, setTreasury] = useState<{ usdc: number; eth: number; circle: number }>({
-    usdc: 0,
-    eth: 0,
-    circle: 0,
-  });
+  const [aiPrompt, setAiPrompt] = useState<Alert | null>(null);
+  const [subscriptions, setSubscriptions] = useState<Subscription[]>(MOCK_SUBSCRIPTIONS);
+  const [stripeBalance, setStripeBalance] = useState<number>(76.43);
 
   const usageRef = useRef<HTMLDivElement | null>(null);
 
@@ -47,139 +50,109 @@ export default function Page() {
     process.env.NEXT_PUBLIC_JUDGE_WALLET ||
     "0x0eaa75FfdadCdb688E1055154818fE1dB0718bab";
 
-  /* --------------------------
-   * Fetch initial data
-   * --------------------------*/
   useEffect(() => {
     (async () => {
       try {
-        const res: SubscriptionResponse = await getSubscriptions("user1");
-        setSubscriptions(res.subs);
-        setStripeBalance(res.balance);
-
-        const circle = await getCircleBalances();
-        const circleBalance =
-          circle.balances.find((b) => b.currency === "USD")?.amount || 0;
-
-        const wallet = await getWalletBalance(demoWallet);
-
-        setTreasury({
-          usdc: wallet.usdc,
-          eth: wallet.eth,
-          circle: circleBalance,
-        });
-
-        const fetchedAlerts = await getAlerts();
-        setAlerts(fetchedAlerts);
-
         const fetchedLogs = await getLogs();
-        setLogs(fetchedLogs);
+        setLogs(fetchedLogs ?? []);
       } catch (err) {
-        console.error("❌ Failed to fetch initial data", err);
+        console.error("❌ Failed to fetch logs", err);
       }
     })();
   }, []);
 
-  /* --------------------------
-   * Subscription Actions
-   * --------------------------*/
-  const handlePause = async (id: string) => {
-    const res = await pauseSubscription("user1", id);
-    setSubscriptions(res.subs);
-    setStripeBalance(res.balance);
-    setLogs((prev) => [
-      {
-        id: Date.now(),
-        type: "action",
-        message: `Paused subscription: ${id}`,
-        timestamp: new Date().toLocaleTimeString(),
-      },
-      ...prev,
-    ]);
+  const handleExecuteAction = (action: string) => {
+    let logMessage = "";
+    let updatedAlerts = [...alerts];
+
+    if (action.includes("Cancel Netflix")) {
+      setSubscriptions((prev) =>
+        prev.map((s) =>
+          s.plan === "Netflix" ? { ...s, status: "canceled" } : s
+        )
+      );
+      setStripeBalance((b) => b - 15.49);
+      logMessage = "Canceled Netflix (refunded $15.49).";
+      updatedAlerts = updatedAlerts.filter((a) => !a.message.includes("Netflix"));
+    }
+    if (action.includes("Pause Spotify")) {
+      setSubscriptions((prev) =>
+        prev.map((s) =>
+          s.plan === "Spotify" ? { ...s, status: "paused" } : s
+        )
+      );
+      logMessage = "Paused Spotify subscription.";
+      updatedAlerts = updatedAlerts.filter((a) => !a.message.includes("Spotify"));
+    }
+    if (action.includes("Cancel Apple Music")) {
+      setSubscriptions((prev) =>
+        prev.map((s) =>
+          s.plan === "Apple Music" ? { ...s, status: "canceled" } : s
+        )
+      );
+      setStripeBalance((b) => b - 10.99);
+      logMessage = "Canceled Apple Music (refunded $10.99).";
+      updatedAlerts = updatedAlerts.filter((a) => !a.message.includes("Apple Music"));
+    }
+    if (action.includes("Cancel ChatGPT Plus")) {
+      setSubscriptions((prev) =>
+        prev.map((s) =>
+          s.plan === "ChatGPT Plus" ? { ...s, status: "canceled" } : s
+        )
+      );
+      setStripeBalance((b) => b - 20.0);
+      logMessage = "Canceled ChatGPT Plus (refunded $20).";
+      updatedAlerts = updatedAlerts.filter((a) => !a.message.includes("ChatGPT Plus"));
+    }
+
+    setAlerts(updatedAlerts);
+    if (logMessage) {
+      setLogs((prev) => [
+        {
+          id: uniqueId(),
+          type: "action",
+          message: logMessage,
+          timestamp: new Date().toLocaleTimeString(),
+        },
+        ...prev,
+      ]);
+    }
   };
 
-  const handleResume = async (id: string) => {
-    const res = await resumeSubscription("user1", id);
-    setSubscriptions(res.subs);
-    setStripeBalance(res.balance);
-    setLogs((prev) => [
-      {
-        id: Date.now(),
-        type: "action",
-        message: `Resumed subscription: ${id}`,
-        timestamp: new Date().toLocaleTimeString(),
-      },
-      ...prev,
-    ]);
-  };
-
-  const handleCancel = async (id: string) => {
-    const res = await cancelSubscription("user1", id);
-    setSubscriptions(res.subs);
-    setStripeBalance(res.balance);
-    setLogs((prev) => [
-      {
-        id: Date.now(),
-        type: "action",
-        message: `Canceled subscription: ${id}`,
-        timestamp: new Date().toLocaleTimeString(),
-      },
-      ...prev,
-    ]);
-  };
-
-  /* --------------------------
-   * Refresh Treasury
-   * --------------------------*/
-  const refreshTreasury = async () => {
-    const circle = await getCircleBalances();
-    const circleBalance =
-      circle.balances.find((b) => b.currency === "USD")?.amount || 0;
-
-    const wallet = await getWalletBalance(demoWallet);
-
-    setTreasury({
-      usdc: wallet.usdc,
-      eth: wallet.eth,
-      circle: circleBalance,
-    });
-
-    setLogs((prev) => [
-      {
-        id: Date.now(),
-        type: "info",
-        message: "Treasury refreshed",
-        timestamp: new Date().toLocaleTimeString(),
-      },
-      ...prev,
-    ]);
-  };
-
-  /* --------------------------
-   * Render
-   * --------------------------*/
   return (
-    <main className="min-h-screen bg-gradient-to-b from-zinc-50 to-white dark:from-zinc-950 dark:to-black text-zinc-900 dark:text-zinc-100">
+    <main className="min-h-screen bg-gradient-to-b from-zinc-50 to-white text-zinc-900">
       <TopNavbar
         onOpenConsole={() => setIsConsoleOpen(true)}
         onCloseConsole={() => setIsConsoleOpen(false)}
         isConsoleOpen={isConsoleOpen}
+        onNavigate={scrollToSection}
       />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 pb-10 space-y-8">
+      {/* Push content below navbar */}
+      <div className="max-w-7xl mx-auto px-6 md:px-10 pb-10 space-y-8 pt-14">
         <ErrorBoundary title="KPIs">
           <KpiRow
-            treasury={treasury.usdc + treasury.circle + treasury.eth * 3500}
+            treasury={(subscriptions ?? []).length * 100}
             activeSubscriptions={
-              subscriptions.filter((s) => s.status === "active").length
+              (subscriptions ?? []).filter((s) => s.status === "active").length
             }
-            alertsCount={alerts.length}
-            transactions={logs.filter((e) => e.type === "action").length}
+            alertsCount={(alerts ?? []).length}
+            transactions={(logs ?? []).filter((e) => e.type === "action").length}
           />
         </ErrorBoundary>
 
         <ErrorBoundary title="Markets">
-          <Markets transactionsFeed={logs} />
+          <Markets demoWallet={demoWallet} />
+        </ErrorBoundary>
+
+        <ErrorBoundary title="Alerts">
+          <Alerts
+            alerts={alerts ?? []}
+            onAskPortia={(alert: Alert) => {
+              setAiPrompt(alert);
+              setIsConsoleOpen(true);
+            }}
+          />
         </ErrorBoundary>
 
         <ErrorBoundary title="Wallets">
@@ -188,33 +161,53 @@ export default function Page() {
 
         <ErrorBoundary title="Subscriptions">
           <SubscriptionPanel
-            subscriptions={subscriptions}
-            balance={stripeBalance}
-            onPause={handlePause}
-            onResume={handleResume}
-            onCancel={handleCancel}
-          />
-        </ErrorBoundary>
-
-        <ErrorBoundary title="Treasury">
-          <TreasuryPanel
-            treasury={treasury}
-            demoWallet={demoWallet}
-            onRefresh={refreshTreasury}
-            eventsFeed={logs}
+            subscriptions={subscriptions ?? []}
+            balance={stripeBalance ?? 0}
+            onPause={async (id) => {
+              setSubscriptions((prev) =>
+                prev.map((s) =>
+                  s.id === id ? { ...s, status: "paused" } : s
+                )
+              );
+            }}
+            onResume={async (id) => {
+              setSubscriptions((prev) =>
+                prev.map((s) =>
+                  s.id === id ? { ...s, status: "active" } : s
+                )
+              );
+            }}
+            onCancel={async (id) => {
+              setSubscriptions((prev) =>
+                prev.map((s) =>
+                  s.id === id ? { ...s, status: "canceled" } : s
+                )
+              );
+            }}
           />
         </ErrorBoundary>
 
         <ErrorBoundary title="Audit Log">
           <section id="audit" ref={usageRef}>
-            <AuditLog events={logs} />
+            <AuditLog
+              events={(logs ?? []).map((e) => ({
+                ...e,
+                id: uniqueId(),
+              }))}
+            />
           </section>
         </ErrorBoundary>
       </div>
 
+      {/* ✅ AiPanel has no `events` prop */}
       <AiPanel
         isOpen={isConsoleOpen}
         onClose={() => setIsConsoleOpen(false)}
+        preload={aiPrompt}
+        onLog={(entry) =>
+          setLogs((prev) => [{ ...entry, id: uniqueId() }, ...prev])
+        }
+        onExecuteAction={handleExecuteAction}
       />
     </main>
   );

@@ -1,59 +1,21 @@
-# backend/services/subscriptions_service.py
+import os
+import stripe
+from datetime import datetime
+from typing import Dict, Any
 
-from datetime import datetime, timedelta
-from typing import Dict, List, Any, Optional
+from backend.services.log_service import add_log
 
-# In-memory stores
-_subs: Dict[str, List[Dict[str, Any]]] = {}
-_logs: List[Dict[str, Any]] = []
+# --- Stripe Setup ---
+stripe.api_key = os.getenv("STRIPE_SECRET_KEY")
 
-
-def _mock(user: str) -> List[Dict[str, Any]]:
-    """Default mock subscriptions for a user"""
-    now = datetime.now()
-    _subs[user] = [
-        {
-            "id": "sub_netflix",
-            "plan": "Netflix Premium",
-            "status": "active",
-            "renews_on": (now + timedelta(days=5)).isoformat(),
-            "logo": "https://logo.clearbit.com/netflix.com",
-        },
-        {
-            "id": "sub_spotify",
-            "plan": "Spotify Premium",
-            "status": "paused",
-            "renews_on": (now + timedelta(days=2)).isoformat(),
-            "logo": "https://logo.clearbit.com/spotify.com",
-        },
-        {
-            "id": "sub_prime",
-            "plan": "Amazon Prime",
-            "status": "active",
-            "renews_on": (now + timedelta(days=1)).isoformat(),
-            "logo": "https://logo.clearbit.com/primevideo.com",
-        },
-        {
-            "id": "sub_disney",
-            "plan": "Disney+ Hotstar",
-            "status": "canceled",
-            "renews_on": None,
-            "logo": "https://logo.clearbit.com/disneyplus.com",
-        },
-    ]
-    _log(user, "reset (default mock loaded)")
-    return _subs[user]
-
-
-def _log(user: str, action: str, extra: Optional[dict] = None):
-    """Append an entry to audit logs"""
-    _logs.append({
-        "id": len(_logs) + 1,
-        "type": "action",
-        "message": f"User {user} {action}",
-        "timestamp": datetime.now().isoformat(),
-        "details": extra or {}
-    })
+# --- Friendly Plan Logos ---
+PLAN_LOGOS = {
+    "Spotify Premium": "https://logo.clearbit.com/spotify.com",
+    "ChatGPT Plus": "https://logo.clearbit.com/openai.com",
+    "Netflix Premium": "https://logo.clearbit.com/netflix.com",
+    "Amazon Prime": "https://logo.clearbit.com/primevideo.com",
+    "Disney+ Hotstar": "https://logo.clearbit.com/disneyplus.com",
+}
 
 
 # ----------------------------
@@ -61,57 +23,123 @@ def _log(user: str, action: str, extra: Optional[dict] = None):
 # ----------------------------
 
 def get_subscription_status(user: str) -> Dict[str, Any]:
-    if user not in _subs:
-        _mock(user)
-    return {"subscriptions": _subs[user], "balance": 42.0}
+    """Fetch subscriptions for a given user (by email or customer id)."""
+    try:
+        customers = stripe.Customer.list(email=user, limit=1).data
+        if not customers:
+            return {"subscriptions": [], "balance": 0.0}
+
+        customer = customers[0]
+        subs = stripe.Subscription.list(customer=customer.id, limit=10).data
+
+        subscriptions = []
+        for s in subs:
+            plan_obj = s["items"]["data"][0]["plan"]
+            plan_name = plan_obj.get("nickname") or plan_obj["id"]
+            logo = PLAN_LOGOS.get(plan_name)
+
+            subscriptions.append({
+                "id": s.id,
+                "plan": plan_name,
+                "status": s.status,
+                "renews_on": datetime.fromtimestamp(s.current_period_end).isoformat()
+                if s.current_period_end else None,
+                "logo": logo,
+            })
+
+        add_log("info", f"Fetched {len(subscriptions)} subscriptions", {"user": user})
+        return {"subscriptions": subscriptions, "balance": 0.0}
+
+    except Exception as e:
+        add_log("error", "Stripe fetch subscriptions failed", {"err": str(e)})
+        return {"subscriptions": [], "balance": 0.0}
 
 
-def create_guest_subscription(user: str) -> List[Dict[str, Any]]:
-    subs = _mock(user)
-    _log(user, "created guest subscriptions")
-    return subs
+def pause_subscription(user: str, sub_id: str):
+    """Pause a Stripe subscription (mark uncollectible)."""
+    try:
+        stripe.Subscription.modify(sub_id, pause_collection={"behavior": "mark_uncollectible"})
+        add_log("action", f"Paused subscription {sub_id}", {"user": user})
+        return get_subscription_status(user)
+    except Exception as e:
+        add_log("error", "Pause subscription failed", {"err": str(e)})
+        raise
 
 
-def pause_subscription(user: str, sub_id: str) -> List[Dict[str, Any]]:
-    if user not in _subs:
-        _mock(user)
-    for s in _subs[user]:
-        if s["id"] == sub_id and s["status"] == "active":
-            s["status"] = "paused"
-            _log(user, "paused subscription", {"sub_id": sub_id})
-    return _subs[user]
+def resume_subscription(user: str, sub_id: str):
+    """Resume a paused Stripe subscription."""
+    try:
+        stripe.Subscription.modify(sub_id, pause_collection="")
+        add_log("action", f"Resumed subscription {sub_id}", {"user": user})
+        return get_subscription_status(user)
+    except Exception as e:
+        add_log("error", "Resume subscription failed", {"err": str(e)})
+        raise
 
 
-def resume_subscription(user: str, sub_id: str) -> List[Dict[str, Any]]:
-    if user not in _subs:
-        _mock(user)
-    for s in _subs[user]:
-        if s["id"] == sub_id and s["status"] == "paused":
-            s["status"] = "active"
-            _log(user, "resumed subscription", {"sub_id": sub_id})
-    return _subs[user]
+def cancel_subscription(user: str, sub_id: str):
+    """Cancel a Stripe subscription (immediate prorated refund if enabled)."""
+    try:
+        stripe.Subscription.delete(sub_id, invoice_now=True, prorate=True)
+        add_log("action", f"Canceled subscription {sub_id}", {"user": user})
+        return get_subscription_status(user)
+    except Exception as e:
+        add_log("error", "Cancel subscription failed", {"err": str(e)})
+        raise
 
 
-def cancel_subscription(user: str, sub_id: str) -> List[Dict[str, Any]]:
-    if user not in _subs:
-        _mock(user)
-    for s in _subs[user]:
-        if s["id"] == sub_id and s["status"] in ("active", "paused", "trialing"):
-            s["status"] = "canceled"
-            _log(user, "canceled subscription", {"sub_id": sub_id})
-    return _subs[user]
+def refund_subscription(user: str, sub_id: str) -> Dict[str, Any]:
+    """Refund the latest payment for a subscription."""
+    try:
+        # 1. Find the latest invoice
+        invoices = stripe.Invoice.list(subscription=sub_id, limit=1)
+        if not invoices.data:
+            add_log("error", f"No invoices found for subscription {sub_id}", {"user": user})
+            return {"status": "error", "message": "No invoices found"}
+
+        payment_intent_id = invoices.data[0].payment_intent
+        if not payment_intent_id:
+            add_log("error", f"No payment intent for subscription {sub_id}", {"user": user})
+            return {"status": "error", "message": "No payment intent found"}
+
+        # 2. Process refund
+        refund = stripe.Refund.create(payment_intent=payment_intent_id)
+
+        # 3. Log success
+        add_log("action", f"Refund processed for subscription {sub_id}", {
+            "refund_id": refund.id,
+            "user": user,
+        })
+
+        return {"status": "success", "refund_id": refund.id}
+
+    except Exception as e:
+        add_log("error", "Refund subscription failed", {"err": str(e), "user": user})
+        return {"status": "error", "message": str(e)}
 
 
-def reset_subscriptions(user: str = "user1") -> List[Dict[str, Any]]:
-    subs = _mock(user)
-    _log(user, "reset subscriptions to default mock state")
-    return subs
+def update_subscription(user: str, sub_id: str, new_price_id: str):
+    """
+    Update a Stripe subscription by switching to a new plan (price_id).
+    Example: Move from Spotify Premium to ChatGPT Plus.
+    """
+    try:
+        sub = stripe.Subscription.retrieve(sub_id)
+        item_id = sub["items"]["data"][0].id
 
+        updated = stripe.Subscription.modify(
+            sub_id,
+            cancel_at_period_end=False,
+            proration_behavior="create_prorations",
+            items=[{
+                "id": item_id,
+                "price": new_price_id
+            }],
+        )
 
-# ----------------------------
-# Logs
-# ----------------------------
+        add_log("action", f"Updated subscription {sub_id}", {"user": user, "new_price": new_price_id})
+        return get_subscription_status(user)
 
-def get_logs() -> List[Dict[str, Any]]:
-    """Return all audit logs"""
-    return list(_logs)
+    except Exception as e:
+        add_log("error", "Update subscription failed", {"err": str(e)})
+        raise

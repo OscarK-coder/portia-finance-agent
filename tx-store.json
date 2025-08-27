@@ -1,0 +1,42 @@
+{
+  "txs": [
+    {
+      "id": 1756302690194,
+      "type": "usdc",
+      "from": "0x9ba79e76F4d1B06fA48855DC34e3D6E7bb1BED2B",
+      "to": "0x0eaa75FfdadCdb688E1055154818fE1dB0718bab",
+      "amount": 5,
+      "hash": "0x50475bb1c9bcf90923f7a099c2e7f349090b213bca157c322c23dd9f317d0b32",
+      "timestamp": "2025-08-27T13:51:30.194Z"
+    },
+    {
+      "id": 1756302679910,
+      "type": "eth",
+      "from": "0x9ba79e76F4d1B06fA48855DC34e3D6E7bb1BED2B",
+      "to": "0x0eaa75FfdadCdb688E1055154818fE1dB0718bab",
+      "amount": 0.01,
+      "hash": "0x1385c6007f14c63d6cf8f2cc027be900ee9ce661b3747c3b94a6fc0c8cba0519",
+      "timestamp": "2025-08-27T13:51:19.910Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": 1756302690195,
+      "type": "action",
+      "message": "Transaction: USDC 5 from 0x9ba7… to 0x0eaa…",
+      "timestamp": "2025-08-27T13:51:30.195Z",
+      "details": {
+        "hash": "0x50475bb1c9bcf90923f7a099c2e7f349090b213bca157c322c23dd9f317d0b32"
+      }
+    },
+    {
+      "id": 1756302679918,
+      "type": "action",
+      "message": "Transaction: ETH 0.01 from 0x9ba7… to 0x0eaa…",
+      "timestamp": "2025-08-27T13:51:19.919Z",
+      "details": {
+        "hash": "0x1385c6007f14c63d6cf8f2cc027be900ee9ce661b3747c3b94a6fc0c8cba0519"
+      }
+    }
+  ]
+}

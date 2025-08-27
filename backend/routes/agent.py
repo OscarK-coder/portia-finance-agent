@@ -39,47 +39,25 @@ class AgentResponse(BaseModel):
 
 
 def _call_agent_sync(prompt: str, debug: bool = False) -> Dict[str, Any]:
-    if _agent_mode() == "mock":
-        q = prompt.lower()
-        now = time.strftime("%H:%M:%S")
-        if "alert" in q:
-            reply = {
-                "id": int(time.time() * 1000),
-                "type": "card",
-                "variant": "alert",
-                "title": "High Gas Fees",
-                "description": "ETH gas fees are unusually high. Suggest waiting ~5 mins.",
-            }
-        elif "treasury" in q:
-            reply = {
-                "id": int(time.time() * 1000),
-                "type": "card",
-                "variant": "treasury",
-                "title": "Treasury Snapshot",
-                "description": "Total Treasury: $5,200 (USDC + ETH + Circle). Healthy reserves.",
-            }
-        elif "subscription" in q:
-            reply = {
-                "id": int(time.time() * 1000),
-                "type": "card",
-                "variant": "subscription",
-                "title": "Subscriptions",
-                "description": "Spotify Premium: Active • ChatGPT Plus: Paused",
-            }
-        else:
-            reply = {
-                "id": int(time.time() * 1000),
-                "type": "info",
-                "message": f"🤖 Portia: I’ve noted your query '{prompt}'. Here’s my recommendation...",
-                "timestamp": now,
-            }
-        return {"response": reply, "executed_tools": [], "debug": {"mode": "mock", "query": prompt} if debug else None}
-
-    # API mode
+    """
+    Call dispatcher + Portia agent.
+    Fast-dispatcher results are wrapped nicely for clean demo output.
+    """
     result = run_agent(prompt, timeout=DEFAULT_TIMEOUT)
-    if "error" in result:
+
+    # ✅ Dispatcher hit → wrap cleanly
+    if isinstance(result, dict) and not result.get("error"):
+        return {
+            "response": result,
+            "executed_tools": ["fast-dispatcher"],
+            "debug": result if debug else None
+        }
+
+    # Handle error
+    if isinstance(result, dict) and "error" in result:
         return {"response": result["error"], "executed_tools": [], "debug": None}
 
+    # Assume LLM-style dict
     executed_tools = []
     if isinstance(result, dict):
         steps = result.get("steps", [])
@@ -91,6 +69,7 @@ def _call_agent_sync(prompt: str, debug: bool = False) -> Dict[str, Any]:
 
         return {"response": reply, "executed_tools": executed_tools, "debug": result if debug else None}
 
+    # Fallback generic string
     return {"response": str(result), "executed_tools": [], "debug": result if debug else None}
 
 
