@@ -7,11 +7,9 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 
 from backend.services.log_service import add_log
-from backend.services.subscriptions_service import (
-    get_subscription_status, create_guest_subscription
-)
+from backend.services.subscriptions_service import get_subscription_status
 
-# ❌ remove prefix
+# ❌ no prefix here
 router = APIRouter(tags=["users"])
 
 _lock = threading.RLock()
@@ -28,24 +26,35 @@ class UserOut(BaseModel):
     renews_on: Optional[str] = None
     created_at: str
 
+# --- Local helper to simulate a guest subscription ---
+def _create_guest_subscription(user_id: str) -> Dict[str, str]:
+    return {
+        "plan": "Guest Trial",
+        "status": "Active",
+        "renews_on": None
+    }
+
 @router.get("/health")
-def health(): return {"ok": True, "count": len(_users)}
+def health():
+    return {"ok": True, "count": len(_users)}
 
 @router.get("/")
 def list_users(limit: int = Query(50, ge=1, le=1000)):
-    with _lock: vals = list(_users.values())[-limit:]
+    with _lock:
+        vals = list(_users.values())[-limit:]
     return {"users": [UserOut(**u) for u in vals], "count": len(vals)}
 
 @router.delete("/clear")
 def clear_users():
-    with _lock: _users.clear()
+    with _lock:
+        _users.clear()
     add_log("action", "All users cleared")
     return {"ok": True, "count": 0}
 
 @router.post("/login/guest", response_model=UserOut)
 def guest_login():
     uid = len(_users) + 1
-    sub = create_guest_subscription(str(uid))
+    sub = _create_guest_subscription(str(uid))
     user = {
         "id": uid,
         "username": _username(),
@@ -54,14 +63,17 @@ def guest_login():
         "renews_on": sub.get("renews_on"),
         "created_at": _now(),
     }
-    with _lock: _users[uid] = user
+    with _lock:
+        _users[uid] = user
     add_log("action", "Guest user created", {"id": uid, "plan": user["plan"]})
     return UserOut(**user)
 
 @router.get("/{user_id}", response_model=UserOut)
 def get_user(user_id: int):
-    with _lock: user = _users.get(user_id)
-    if not user: raise HTTPException(404, "User not found")
+    with _lock:
+        user = _users.get(user_id)
+    if not user:
+        raise HTTPException(404, "User not found")
     return UserOut(**user)
 
 @router.get("/{user_id}/subscription")

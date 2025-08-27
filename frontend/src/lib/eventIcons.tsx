@@ -6,46 +6,39 @@ import {
   CheckCircle,
   XCircle,
   RefreshCw,
+  CreditCard,
+  Wallet,
+  BarChart,
+  Banknote,
 } from "lucide-react";
 
 export function getEventIcon(type: string, size = 16) {
-  let icon = null;
-  let title = "";
+  const props = { size };
 
   switch (type) {
     case "sent":
-      icon = <Send className={`h-${size/4} w-${size/4} text-rose-500`} />;
-      title = "Sent Transaction";
-      break;
+      return <Send {...props} className="text-rose-500" />;
     case "recv":
-      icon = <Download className={`h-${size/4} w-${size/4} text-emerald-500`} />;
-      title = "Received Transaction";
-      break;
+      return <Download {...props} className="text-emerald-500" />;
     case "info":
-      icon = <Info className={`h-${size/4} w-${size/4} text-blue-500`} />;
-      title = "Info";
-      break;
+      return <Info {...props} className="text-blue-500" />;
     case "alert":
-      icon = <AlertTriangle className={`h-${size/4} w-${size/4} text-amber-500`} />;
-      title = "Alert";
-      break;
+      return <AlertTriangle {...props} className="text-amber-500" />;
     case "success":
-      icon = <CheckCircle className={`h-${size/4} w-${size/4} text-green-500`} />;
-      title = "Success";
-      break;
+      return <CheckCircle {...props} className="text-green-500" />;
     case "error":
-      icon = <XCircle className={`h-${size/4} w-${size/4} text-red-500`} />;
-      title = "Error";
-      break;
+      return <XCircle {...props} className="text-red-500" />;
     case "action":
-      icon = <RefreshCw className={`h-${size/4} w-${size/4} text-indigo-500`} />;
-      title = "Action";
-      break;
+      return <RefreshCw {...props} className="text-indigo-500" />;
+    case "subscription":
+      return <CreditCard {...props} className="text-purple-500" />;
+    case "wallet":
+      return <Wallet {...props} className="text-teal-500" />;
+    case "market":
+      return <BarChart {...props} className="text-yellow-500" />;
+    case "treasury":
+      return <Banknote {...props} className="text-green-700" />;
     default:
-      icon = <Info className={`h-${size/4} w-${size/4} text-zinc-400`} />;
-      title = "Event";
-      break;
+      return <Info {...props} className="text-zinc-400" />;
   }
-
-  return <span title={title}>{icon}</span>;
 }

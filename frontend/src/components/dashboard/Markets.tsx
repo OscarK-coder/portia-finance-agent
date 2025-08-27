@@ -1,70 +1,82 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ArrowUpRight, ArrowDownRight } from "lucide-react";
+import { ArrowUpRight, ArrowDownRight, Minus } from "lucide-react";
 import Panel from "@/components/Panel";
 import Skeleton from "@/components/Skeleton";
 import { LineChart, Line, ResponsiveContainer } from "recharts";
-import { getEventIcon } from "@/lib/eventIcons";
-import { getCryptoPrice } from "@/lib/api"; // ✅ use backend API
-
-export interface LogEntry {
-  id: number;
-  type: "info" | "success" | "error" | "action" | "alert" | "sent" | "recv";
-  message: string;
-  timestamp: string;
-}
+import { getCryptoPrice, getWalletBalance } from "@/lib/api";
 
 interface MarketsProps {
-  transactionsFeed?: LogEntry[] | any[];
+  demoWallet: string;
 }
 
-export default function Markets({ transactionsFeed = [] }: MarketsProps) {
+export default function Markets({ demoWallet }: MarketsProps) {
   const [ethPrice, setEthPrice] = useState<number | null>(null);
   const [ethChange, setEthChange] = useState<number>(0);
   const [ethSpark, setEthSpark] = useState<{ idx: number; price: number }[]>([]);
+
+  const [usdcBalance, setUsdcBalance] = useState<number>(0);
+  const [ethBalance, setEthBalance] = useState<number>(0);
+  const [portfolioHistory, setPortfolioHistory] = useState<
+    { idx: number; price: number }[]
+  >([]);
+  const [portfolioChange, setPortfolioChange] = useState<number>(0);
+
   const [loading, setLoading] = useState(true);
   const [gasFee, setGasFee] = useState<number | null>(null);
 
-  // ETH fetch (backend)
+  // ETH price fetch
   useEffect(() => {
     const fetchEth = async () => {
       try {
-        const res = await getCryptoPrice("ETH"); // ✅ backend API
+        const res = await getCryptoPrice("ETH");
         if (res?.price) {
           setEthPrice(res.price);
-
-          // Sparkline: just append to local history
           setEthSpark((prev) => {
-            const next = [...prev, { idx: prev.length, price: res.price }];
-            return next.slice(-20); // keep last 20 points
+            const next = [...prev, { idx: prev.length, price: res.price }].slice(-20);
+            if (next.length > 1) {
+              const first = next[0].price;
+              const last = next[next.length - 1].price;
+              setEthChange(((last - first) / first) * 100);
+            }
+            return next;
           });
-
-          if (ethSpark.length > 1) {
-            const first = ethSpark[0].price;
-            const last = res.price;
-            setEthChange(((last - first) / first) * 100);
-          }
         }
       } catch (err) {
-        console.error("Error fetching ETH price:", err);
+        console.error("⚠️ ETH fetch error:", err);
       } finally {
         setLoading(false);
       }
     };
-
     fetchEth();
-    const interval = setInterval(fetchEth, 30000); // refresh every 30s
-    return () => clearInterval(interval);
+    const i = setInterval(fetchEth, 30000);
+    return () => clearInterval(i);
   }, []);
 
-  // Mock gas fee (replace with Alchemy later if needed)
+  // Wallet balances (ETH + USDC)
+  useEffect(() => {
+    const fetchBalances = async () => {
+      try {
+        const wallet = await getWalletBalance(demoWallet);
+        setUsdcBalance(wallet?.usdc ?? 0);
+        setEthBalance(wallet?.eth ?? 0);
+      } catch (err) {
+        console.error("⚠️ Error fetching wallet balances:", err);
+      }
+    };
+    fetchBalances();
+    const i = setInterval(fetchBalances, 60000);
+    return () => clearInterval(i);
+  }, [demoWallet]);
+
+  // Gas fee mock
   useEffect(() => {
     const fetchGas = async () =>
       setGasFee(Math.floor(Math.random() * 20) + 5);
     fetchGas();
-    const interval = setInterval(fetchGas, 30000);
-    return () => clearInterval(interval);
+    const i = setInterval(fetchGas, 30000);
+    return () => clearInterval(i);
   }, []);
 
   const renderSparkline = (
@@ -86,110 +98,131 @@ export default function Markets({ transactionsFeed = [] }: MarketsProps) {
     </div>
   );
 
-  // Normalize transactions
-  const latestTx: LogEntry[] = transactionsFeed
-    .slice(0, 3)
-    .map((tx: any, idx: number) => ({
-      id: tx.id ?? idx,
-      type: tx.type ?? "info",
-      message: tx.message ?? tx.desc ?? "",
-      timestamp: tx.timestamp ?? tx.time ?? "",
-    }));
+  // Portfolio total in USD
+  const portfolioTotal =
+    (usdcBalance ?? 0) + (ethBalance ?? 0) * (ethPrice ?? 0);
+
+  // Track portfolio history & % change
+  useEffect(() => {
+    if (!portfolioTotal) return;
+    setPortfolioHistory((prev) => {
+      const next = [...prev, { idx: prev.length, price: portfolioTotal }];
+      if (next.length > 1) {
+        const first = next[0].price;
+        const last = next[next.length - 1].price;
+        setPortfolioChange(((last - first) / first) * 100);
+      }
+      return next.slice(-20);
+    });
+  }, [portfolioTotal]);
+
+  const ChangeLine = ({ value }: { value?: number }) => {
+    if (value === undefined) {
+      return (
+        <div className="flex items-center gap-1 text-xs text-zinc-400">
+          <Minus className="h-3 w-3" /> –
+        </div>
+      );
+    }
+    return (
+      <div className="flex items-center gap-1 text-xs">
+        {value >= 0 ? (
+          <ArrowUpRight className="h-3 w-3 text-emerald-500" />
+        ) : (
+          <ArrowDownRight className="h-3 w-3 text-rose-500" />
+        )}
+        <span className={value >= 0 ? "text-emerald-600" : "text-rose-600"}>
+          {value.toFixed(1)}%
+        </span>
+      </div>
+    );
+  };
 
   return (
     <section id="markets">
       <Panel title="Markets">
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {/* ETH */}
-          <li className="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 flex flex-col justify-between">
-            {loading ? (
-              <Skeleton className="h-6 w-24" />
-            ) : (
-              <>
-                <div className="flex items-center justify-between">
-                  <span className="font-semibold">ETH</span>
-                  <span className="px-2 py-0.5 text-[10px] rounded-full bg-purple-100 text-purple-600">
-                    Sepolia
-                  </span>
-                </div>
-                <div className="text-lg font-bold">
-                  ${ethPrice?.toLocaleString(undefined, {
-                    maximumFractionDigits: 0,
-                  })}
-                </div>
-                <div className="flex items-center gap-1 text-xs">
-                  {ethChange >= 0 ? (
-                    <ArrowUpRight className="h-3 w-3 text-emerald-500" />
-                  ) : (
-                    <ArrowDownRight className="h-3 w-3 text-rose-500" />
-                  )}
-                  <span
-                    className={
-                      ethChange >= 0 ? "text-emerald-600" : "text-rose-600"
-                    }
-                  >
-                    {ethChange.toFixed(1)}%
-                  </span>
-                </div>
-                {ethSpark.length > 0 && renderSparkline(ethSpark, ethChange >= 0)}
-              </>
-            )}
+          <li className="rounded-lg border border-zinc-200 bg-white/70 p-3 flex flex-col">
+            <div className="flex items-center justify-between text-sm mb-1">
+              <span className="font-semibold">ETH</span>
+              <span className="px-2 py-0.5 text-[10px] rounded-full bg-purple-100 text-purple-600">
+                Sepolia
+              </span>
+            </div>
+            <div className="text-lg font-bold">
+              {ethPrice === null ? (
+                <Skeleton className="h-6 w-16" />
+              ) : (
+                `$${ethPrice.toLocaleString(undefined, {
+                  maximumFractionDigits: 0,
+                })}`
+              )}
+            </div>
+            <div className="flex justify-between items-center">
+              <ChangeLine value={ethChange} />
+              {ethSpark.length > 0 &&
+                renderSparkline(ethSpark, ethChange >= 0)}
+            </div>
           </li>
 
           {/* USDC */}
-          <li className="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 flex flex-col justify-between">
-            <div className="flex items-center justify-between">
+          <li className="rounded-lg border border-zinc-200 bg-white/70 p-3 flex flex-col">
+            <div className="flex items-center justify-between text-sm mb-1">
               <span className="font-semibold">USDC</span>
               <span className="px-2 py-0.5 text-[10px] rounded-full bg-blue-100 text-blue-600">
                 Stablecoin
               </span>
             </div>
             <div className="text-lg font-bold">$1.00</div>
+            <div className="flex justify-between items-center">
+              <ChangeLine /> {/* placeholder */}
+            </div>
             <div className="text-xs text-zinc-500">Peg ±0.1%</div>
           </li>
 
           {/* Gas Fees */}
-          <li className="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 flex flex-col justify-between">
-            <div className="flex items-center justify-between">
+          <li className="rounded-lg border border-zinc-200 bg-white/70 p-3 flex flex-col">
+            <div className="flex items-center justify-between text-sm mb-1">
               <span className="font-semibold">Gas Fees</span>
               <span className="px-2 py-0.5 text-[10px] rounded-full bg-amber-100 text-amber-600">
-                Network Cost
+                Network
               </span>
             </div>
             <div className="text-lg font-bold">
-              {gasFee ? `${gasFee} gwei` : <Skeleton className="h-6 w-16" />}
+              {gasFee ? `${gasFee} gwei` : <Skeleton className="h-6 w-12" />}
             </div>
-            <div className="text-xs text-zinc-500">Sepolia avg fee</div>
+            <div className="flex justify-between items-center">
+              <ChangeLine /> {/* placeholder */}
+            </div>
+            <div className="text-xs text-zinc-500">Sepolia avg</div>
           </li>
 
-          {/* Treasury Recent Transactions */}
-          <li className="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 flex flex-col">
-            <div className="flex items-center justify-between mb-2">
-              <span className="font-semibold">Treasury</span>
+          {/* Portfolio */}
+          <li className="rounded-lg border border-zinc-200 bg-white/70 p-3 flex flex-col">
+            <div className="flex items-center justify-between text-sm mb-1">
+              <span className="font-semibold">Portfolio</span>
               <span className="px-2 py-0.5 text-[10px] rounded-full bg-green-100 text-green-600">
-                Activity
+                Wallet
               </span>
             </div>
-            <ul className="space-y-1 text-xs">
-              {latestTx.length > 0 ? (
-                latestTx.map((tx) => (
-                  <li
-                    key={tx.id}
-                    className="flex items-center justify-between"
-                  >
-                    <div className="flex items-center gap-1">
-                      {getEventIcon(tx.type, 12)}
-                      <span>{tx.message}</span>
-                    </div>
-                    <span className="text-zinc-500 text-[10px]">
-                      {tx.timestamp}
-                    </span>
-                  </li>
-                ))
-              ) : (
-                <li className="text-zinc-500 italic">No recent transactions</li>
-              )}
-            </ul>
+            <div className="text-lg font-bold">
+              ${portfolioTotal.toLocaleString(undefined, {
+                maximumFractionDigits: 0,
+              })}
+            </div>
+            <div className="flex justify-between items-center">
+              <ChangeLine value={portfolioChange} />
+              {portfolioHistory.length > 1 &&
+                renderSparkline(
+                  portfolioHistory,
+                  portfolioHistory[portfolioHistory.length - 1].price >=
+                    portfolioHistory[0].price
+                )}
+            </div>
+            <div className="text-xs text-zinc-500">
+              {ethBalance.toFixed(3)} ETH + {usdcBalance.toFixed(2)} USDC
+            </div>
           </li>
         </ul>
       </Panel>

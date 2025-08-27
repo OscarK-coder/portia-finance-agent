@@ -1,47 +1,32 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { X, Maximize2, Minimize2, Send } from "lucide-react";
+import { X, Send, Download, Info, AlertTriangle, CheckCircle, XCircle, RefreshCw } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import RecommendationCard, { CardVariant } from "@/components/RecommendationCard";
-import { askPortia, getAlerts, triggerDemoEvent, type Alert } from "@/lib/api"; 
+import Recommendations, { CardVariant } from "@/components/Recommendations";
+import {
+  askPortia,
+  pauseSubscription,
+  resumeSubscription,
+  cancelSubscription,
+  transferUSDC,
+  mintUSDC,
+  redeemUSDC,
+  pushLog,
+  type Alert,
+} from "@/lib/api";
+import PortiaLoader from "@/components/PortiaLoader";
 
-// ---------------------
-// Typing Indicator
-// ---------------------
-function TypingIndicator() {
-  return (
-    <div className="flex items-center gap-1 h-5">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <motion.span
-          key={i}
-          className="w-1.5 h-1.5 rounded-full bg-zinc-900 dark:bg-zinc-100"
-          animate={{
-            x: [0, 16, 32, 48],
-            opacity: [0, 1, 1, 0],
-            scale: [0.6, 1, 1, 0.6],
-          }}
-          transition={{
-            duration: 1.4,
-            repeat: Infinity,
-            delay: i * 0.18,
-            ease: "easeInOut",
-          }}
-        />
-      ))}
-    </div>
-  );
-}
-
-// ---------------------
-// Types
-// ---------------------
+/* ------------------------------
+ * Types
+ * ------------------------------ */
 interface CardMessage {
   id: number;
   type: "card";
   variant: CardVariant;
   title: string;
   description: string;
+  actions?: { label: string; tool: string; args?: Record<string, any> }[];
 }
 
 interface ChatMessage {
@@ -53,316 +38,360 @@ interface ChatMessage {
 
 type Message = CardMessage | ChatMessage;
 
-// ---------------------
-// Component
-// ---------------------
+interface AiPanelProps {
+  isOpen: boolean;
+  onClose: () => void;
+  preload?: Alert | null;
+  onLog?: (entry: {
+    type: "action" | "info" | "alert" | "error" | "success";
+    message: string;
+    timestamp: string;
+  }) => void;
+  onExecuteAction?: (action: string) => void;
+}
+
+/* ------------------------------
+ * Local helper: getEventIcon
+ * ------------------------------ */
+function getEventIcon(type: string, size = 16) {
+  switch (type) {
+    case "sent":
+      return <Send className={`h-${size / 4} w-${size / 4} text-rose-500`} />;
+    case "recv":
+      return <Download className={`h-${size / 4} w-${size / 4} text-emerald-500`} />;
+    case "info":
+      return <Info className={`h-${size / 4} w-${size / 4} text-blue-500`} />;
+    case "alert":
+      return <AlertTriangle className={`h-${size / 4} w-${size / 4} text-amber-500`} />;
+    case "success":
+      return <CheckCircle className={`h-${size / 4} w-${size / 4} text-green-500`} />;
+    case "error":
+      return <XCircle className={`h-${size / 4} w-${size / 4} text-red-500`} />;
+    case "action":
+      return <RefreshCw className={`h-${size / 4} w-${size / 4} text-indigo-500`} />;
+    default:
+      return <Info className={`h-${size / 4} w-${size / 4} text-zinc-400`} />;
+  }
+}
+
+/* ------------------------------
+ * Component
+ * ------------------------------ */
 export default function AiPanel({
   isOpen,
   onClose,
-}: {
-  isOpen: boolean;
-  onClose: () => void;
-}) {
-  const [height, setHeight] = useState(0.6);
-  const [isFull, setIsFull] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([]);
+  preload,
+  onLog,
+  onExecuteAction,
+}: AiPanelProps) {
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      id: 1,
+      type: "info",
+      message: "Welcome to Portia AI Console. You can ask questions below.",
+      timestamp: new Date().toLocaleTimeString(),
+    },
+  ]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
-  const [seenAlertIds, setSeenAlertIds] = useState<Set<number>>(new Set());
+  const bottomRef = useRef<HTMLDivElement | null>(null);
 
-  // Sounds
-  const sendSound = useRef<HTMLAudioElement | null>(null);
-  const replySound = useRef<HTMLAudioElement | null>(null);
-
+  /* ------------------------------
+   * Handle preload alert
+   * ------------------------------ */
   useEffect(() => {
-    sendSound.current = new Audio(
-      "https://assets.mixkit.co/sfx/preview/mixkit-interface-click-1126.mp3"
-    );
-    sendSound.current.volume = 0.25;
+    if (preload) {
+      const card: CardMessage = {
+        id: Date.now(),
+        type: "card",
+        variant: preload.type as CardVariant,
+        title: preload.message,
+        description: preload.summary || preload.message,
+        actions: preload.recommendations || [],
+      };
 
-    replySound.current = new Audio(
-      "https://assets.mixkit.co/sfx/preview/mixkit-soft-pop-2367.mp3"
-    );
-    replySound.current.volume = 0.2;
-  }, []);
-
-  // Reset on open
-  useEffect(() => {
-    if (isOpen) {
-      setHeight(0.6);
-      setIsFull(false);
-      setMessages([]);
-      setSeenAlertIds(new Set());
+      setMessages((prev) => [...prev, card]);
+      onLog?.({
+        type: "alert",
+        message: `Alert loaded into AI Console: ${preload.message}`,
+        timestamp: new Date().toLocaleTimeString(),
+      });
     }
-  }, [isOpen]);
+  }, [preload]);
 
-  // ESC closes
-  useEffect(() => {
-    if (!isOpen) return;
-    const handleKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [isOpen, onClose]);
+  /* ------------------------------
+   * Execute Action
+   * ------------------------------ */
+  const executeAction = async (tool: string, args?: Record<string, any>) => {
+    try {
+      if (tool === "noop") {
+        const skipMsg: ChatMessage = {
+          id: Date.now(),
+          type: "info",
+          message: "⏭️ Skipped this recommendation.",
+          timestamp: new Date().toLocaleTimeString(),
+        };
+        setMessages((prev) => prev.filter((m) => m.type !== "card").concat(skipMsg));
+        onLog?.({ type: "info", message: "User skipped recommendation", timestamp: skipMsg.timestamp });
+        if (preload?.id) {
+          (window as any).resolveAlertExternally?.(preload.id, "Skipped recommendation");
+        }
+        return;
+      }
 
-  // Resize drag
-  const startDrag = (e: React.MouseEvent) => {
-    e.preventDefault();
-    if (isFull) return;
-    const startY = e.clientY;
-    const startHeight = height;
+      const userMsg: ChatMessage = {
+        id: Date.now(),
+        type: "action",
+        message: `Selected action: ${tool}`,
+        timestamp: new Date().toLocaleTimeString(),
+      };
+      setMessages((prev) => [...prev, userMsg]);
+      onLog?.({ type: "action", message: `User selected ${tool}`, timestamp: userMsg.timestamp });
+      setIsTyping(true);
 
-    const onMove = (moveEvent: MouseEvent) => {
-      const deltaY = startY - moveEvent.clientY;
-      setHeight(
-        Math.min(1, Math.max(0.25, startHeight + deltaY / window.innerHeight))
-      );
-    };
+      switch (tool) {
+        case "pauseSubscription":
+          await pauseSubscription(args?.id);
+          break;
+        case "resumeSubscription":
+          await resumeSubscription(args?.id);
+          break;
+        case "cancelSubscription":
+          await cancelSubscription(args?.id);
+          break;
+        case "transferUSDC":
+          await transferUSDC(args?.to || "0xBackupWallet", args?.amount || 50);
+          break;
+        case "mintUSDC":
+          await mintUSDC(args?.amount || 100);
+          break;
+        case "redeemUSDC":
+          await redeemUSDC(args?.amount || 100);
+          break;
+      }
 
-    const onUp = () => {
-      window.removeEventListener("mousemove", onMove);
-      window.removeEventListener("mouseup", onUp);
-    };
+      await pushLog("action", `Executed action: ${tool}`);
+      onExecuteAction?.(tool);
 
-    window.addEventListener("mousemove", onMove);
-    window.addEventListener("mouseup", onUp);
+      setTimeout(() => {
+        setIsTyping(false);
+
+        const confirmationMsg =
+          tool === "cancelSubscription"
+            ? "✅ Subscription canceled and refund issued."
+            : tool === "pauseSubscription"
+            ? "⏸️ Subscription paused successfully."
+            : tool === "resumeSubscription"
+            ? "▶️ Subscription resumed successfully."
+            : tool === "transferUSDC"
+            ? "💸 USDC transferred successfully."
+            : tool === "mintUSDC"
+            ? "🪙 USDC minted successfully."
+            : tool === "redeemUSDC"
+            ? "🏦 USDC redeemed successfully."
+            : "✅ Action completed.";
+
+        const confirmation: ChatMessage = {
+          id: Date.now() + 1,
+          type: "info",
+          message: confirmationMsg,
+          timestamp: new Date().toLocaleTimeString(),
+        };
+
+        setMessages((prev) => prev.filter((m) => m.type !== "card").concat(confirmation));
+
+        onLog?.({ type: "success", message: confirmationMsg, timestamp: confirmation.timestamp });
+        if (preload?.id) {
+          (window as any).resolveAlertExternally?.(preload.id, confirmationMsg);
+        }
+      }, 5500);
+    } catch (err) {
+      console.error("⚠️ Action failed:", err);
+      await pushLog("error", `Failed to execute ${tool}`);
+      onLog?.({
+        type: "error",
+        message: `Failed to execute ${tool}`,
+        timestamp: new Date().toLocaleTimeString(),
+      });
+      setIsTyping(false);
+    }
   };
 
-  // ---------------------
-  // Fetch Alerts periodically
-  // ---------------------
-  useEffect(() => {
-    if (!isOpen) return;
+  /* ------------------------------
+   * Send Message to Portia
+   * ------------------------------ */
+  const handleSend = async (msg?: string) => {
+    const text = msg || input;
+    if (!text.trim()) return;
 
-    const fetchAlerts = async () => {
-      try {
-        const alerts = await getAlerts();
-        const newOnes = alerts.filter((a) => !seenAlertIds.has(a.id));
-        if (newOnes.length > 0) {
-          setSeenAlertIds((prev) => {
-            const copy = new Set(prev);
-            newOnes.forEach((a) => copy.add(a.id));
-            return copy;
-          });
-
-          const alertMsgs: Message[] = newOnes.map((a) => ({
-            id: a.id,
-            type: "info",
-            message: `🔔 [${a.level.toUpperCase()}] ${a.message}`,
-            timestamp: a.timestamp || new Date().toLocaleTimeString(),
-          }));
-
-          setMessages((prev) => [...alertMsgs, ...prev]);
-          try {
-            await replySound.current?.play();
-          } catch (e) {
-            console.warn("🔇 Failed to play reply sound:", e);
-          }
-        }
-      } catch (e) {
-        console.warn("⚠️ Failed to fetch alerts:", e);
-      }
-    };
-
-    fetchAlerts();
-    const interval = setInterval(fetchAlerts, 15000);
-    return () => clearInterval(interval);
-  }, [isOpen, seenAlertIds]);
-
-  // ---------------------
-  // Handle Send
-  // ---------------------
-  const handleSend = async () => {
-    if (!input.trim()) return;
-
+    const timestamp = new Date().toLocaleTimeString();
     const userMsg: ChatMessage = {
       id: Date.now(),
       type: "action",
-      message: `Judge: ${input}`,
-      timestamp: new Date().toLocaleTimeString(),
+      message: text,
+      timestamp,
     };
 
-    setMessages((prev) => [userMsg, ...prev]);
-    try {
-      await sendSound.current?.play();
-    } catch (e) {
-      console.warn("🔇 Failed to play send sound:", e);
-    }
+    setMessages((prev) => [...prev, userMsg]);
+    onLog?.({ type: "action", message: `User asked: ${text}`, timestamp });
 
-    const query = input;
-    setInput("");
+    if (!msg) setInput("");
     setIsTyping(true);
 
     try {
-      const res = await askPortia(query, "user1");
-      setIsTyping(false);
+      const res = await askPortia(text, "user1");
 
-      let reply: Message;
-      if (typeof res.response === "string") {
-        reply = {
-          id: Date.now() + 1,
+      if ("responses" in res && Array.isArray(res.responses) && res.responses.length > 0) {
+        const replies: Message[] = res.responses.map((r: any) =>
+          typeof r === "string"
+            ? {
+                id: Date.now() + Math.random(),
+                type: "info",
+                message: r,
+                timestamp: new Date().toLocaleTimeString(),
+              }
+            : ({ ...r, id: Date.now() + Math.random() } as CardMessage)
+        );
+
+        setTimeout(() => {
+          setMessages((prev) => [...prev, ...replies]);
+          setIsTyping(false);
+        }, 1000);
+      } else if ("response" in res && res.response) {
+        const reply: ChatMessage = {
+          id: Date.now(),
           type: "info",
-          message: `🤖 Portia: ${res.response}`,
+          message: String(res.response),
           timestamp: new Date().toLocaleTimeString(),
         };
+        setMessages((prev) => [...prev, reply]);
+        onLog?.({ type: "info", message: String(res.response), timestamp: reply.timestamp });
+        setIsTyping(false);
       } else {
-        reply = { ...res.response, id: Date.now() + 1 } as CardMessage;
-      }
-
-      setMessages((prev) => [reply, ...prev]);
-      try {
-        await replySound.current?.play();
-      } catch (e) {
-        console.warn("🔇 Failed to play reply sound:", e);
+        setIsTyping(false);
       }
     } catch (err) {
-      console.warn("⚠️ Backend failed:", err);
+      console.error("⚠️ Portia failed:", err);
+      onLog?.({
+        type: "error",
+        message: "Portia failed to respond",
+        timestamp: new Date().toLocaleTimeString(),
+      });
       setIsTyping(false);
     }
   };
 
+  /* ------------------------------
+   * Auto-scroll
+   * ------------------------------ */
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages, isTyping]);
+
+  /* ------------------------------
+   * UI
+   * ------------------------------ */
   return (
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Overlay */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            animate={{ opacity: 0.35 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
+            transition={{ duration: 0.28 }}
             onClick={onClose}
-            className="fixed inset-0 z-40 bg-black/30 dark:bg-black/50 backdrop-blur-sm"
+            className="fixed inset-0 z-40 bg-black"
           />
 
-          {/* Console */}
           <motion.div
-            initial={{ y: "100%", opacity: 0.8 }}
-            animate={{
-              y: 0,
-              height: isFull ? "100vh" : `${height * 100}vh`,
-              opacity: 1,
-              boxShadow: "0 0 40px rgba(99,102,241,0.2)",
-            }}
-            exit={{ y: "100%", opacity: 0 }}
-            transition={{ type: "spring", stiffness: 260, damping: 22 }}
-            className="fixed bottom-0 left-0 right-0 z-50 flex justify-center px-6 pb-4"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ duration: 0.28, ease: "easeInOut" }}
+            className="fixed top-0 right-0 bottom-0 z-50 flex flex-col border-l border-zinc-200 bg-white shadow-xl"
+            style={{ width: "380px" }}
           >
-            <div className="h-full w-full max-w-6xl flex flex-col rounded-2xl overflow-hidden shadow-xl border border-white/20 dark:border-zinc-800/50 bg-white/30 dark:bg-zinc-900/30 backdrop-blur-2xl backdrop-saturate-150">
-              {!isFull && (
-                <div
-                  onMouseDown={startDrag}
-                  className="h-2 cursor-row-resize bg-zinc-300/60 dark:bg-zinc-700/60 rounded-t-2xl"
-                />
-              )}
+            {/* Header */}
+            <div className="flex justify-between items-center px-4 py-3 border-b border-zinc-200 bg-white">
+              <h2 className="text-sm font-semibold tracking-tight text-zinc-800">
+                Portia AI Console
+              </h2>
+              <button onClick={onClose} className="p-1 rounded-full hover:bg-red-100">
+                <X size={16} className="text-red-500" />
+              </button>
+            </div>
 
-              {/* Header */}
-              <div className="flex justify-between items-center px-4 py-2 border-b border-white/20 dark:border-zinc-800">
-                <div className="flex items-center gap-2">
-                  <span
-                    className={`w-2.5 h-2.5 rounded-full ${
-                      isTyping
-                        ? "bg-yellow-400 animate-pulse"
-                        : "bg-green-500"
-                    }`}
-                  />
-                  <h2 className="text-xs font-semibold text-zinc-700 dark:text-zinc-200 tracking-tight">
-                    Portia AI Console
-                  </h2>
-                </div>
-                <div className="flex items-center gap-1">
-                  <button
-                    onClick={() => setIsFull(!isFull)}
-                    className="p-1 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-800 transition"
-                  >
-                    {isFull ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
-                  </button>
-                  <button
-                    onClick={onClose}
-                    className="p-1 rounded-full hover:bg-red-100 dark:hover:bg-red-900/30 transition"
-                  >
-                    <X size={16} className="text-red-500" />
-                  </button>
-                </div>
-              </div>
-
-              {/* Quick Actions */}
-              <div className="px-3 py-1 flex gap-2 border-b border-transparent bg-white/30 dark:bg-zinc-900/30 backdrop-blur relative">
-                {["💸 Transfer", "📊 Subscriptions", "🔔 Alerts", "🏦 Treasury"].map(
-                  (chip) => (
-                    <button
-                      key={chip}
-                      onClick={() => {
-                        setInput(chip);
-                        handleSend();
-                      }}
-                      className="px-2.5 py-1 text-[11px] rounded-full border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition"
-                    >
-                      {chip}
-                    </button>
-                  )
-                )}
-                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-400/40 to-transparent" />
-              </div>
-
-              {/* Messages */}
-              <div className="flex-1 overflow-y-auto px-3 py-3 space-y-2 text-[13px] leading-snug relative">
+            {/* Messages */}
+            <div className="flex-1 overflow-y-auto px-3 py-3 space-y-2 custom-scrollbar">
+              <AnimatePresence>
                 {messages.map((e) =>
                   e.type === "card" ? (
-                    <RecommendationCard
+                    <motion.div
                       key={e.id}
-                      variant={e.variant}
-                      title={e.title}
-                      description={e.description}
-                    />
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                    >
+                      <Recommendations
+                        variant={e.variant}
+                        title={e.title}
+                        description={e.description}
+                        actions={e.actions}
+                        onAction={(tool: string, args?: Record<string, any>) =>
+                          executeAction(tool, args)
+                        }
+                      />
+                    </motion.div>
                   ) : (
                     <motion.div
                       key={e.id}
-                      initial={{ opacity: 0, y: 8 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.2 }}
-                      className={`max-w-[75%] px-3 py-1.5 rounded-xl shadow-sm ${
-                        e.message?.startsWith("Judge:")
-                          ? "ml-auto bg-gradient-to-r from-indigo-500 to-purple-500 text-white"
-                          : "mr-auto bg-white/70 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100"
+                      initial={{ opacity: 0, x: e.type === "action" ? 30 : -30 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: e.type === "action" ? 30 : -30 }}
+                      transition={{ duration: 0.25, ease: "easeOut" }}
+                      className={`max-w-[75%] px-3 py-1 text-xs flex items-center gap-2 ${
+                        e.type === "action"
+                          ? "ml-auto bg-black text-white rounded-full"
+                          : "mr-auto bg-zinc-200 text-zinc-900 rounded-full"
                       }`}
                     >
-                      {e.message}
-                      {"timestamp" in e && (
-                        <div className="text-[10px] opacity-70 mt-0.5">
-                          {e.timestamp}
-                        </div>
-                      )}
+                      {getEventIcon(e.type)}
+                      <span>{e.message}</span>
+                      <div className="text-[9px] opacity-50 mt-0.5 text-right">
+                        {e.timestamp}
+                      </div>
                     </motion.div>
                   )
                 )}
+              </AnimatePresence>
 
-                {isTyping && (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="mr-auto bg-white/70 dark:bg-zinc-800 px-3 py-1.5 rounded-xl shadow-sm"
-                  >
-                    <TypingIndicator />
-                  </motion.div>
-                )}
-              </div>
+              {isTyping && (
+                <div className="mr-auto flex flex-col items-start">
+                  <PortiaLoader />
+                  <div className="flex items-center mt-1 ml-1 text-[11px] text-zinc-500">
+                    Portia is analyzing...
+                  </div>
+                </div>
+              )}
+              <div ref={bottomRef} />
+            </div>
 
-              {/* Input */}
-              <div className="border-t border-white/20 dark:border-zinc-800 p-2 flex gap-2 bg-white/40 dark:bg-zinc-900/40 backdrop-blur-md">
-                <input
-                  value={input}
-                  onChange={(e) => setInput(e.target.value)}
-                  onKeyDown={(e) => e.key === "Enter" && handleSend()}
-                  className="flex-1 px-3 py-1.5 rounded-full border border-zinc-300 dark:border-zinc-700 bg-white/90 dark:bg-zinc-800 text-xs outline-none focus:ring-2 focus:ring-indigo-500"
-                  placeholder="Ask Portia something..."
-                />
-                <button
-                  onClick={handleSend}
-                  className="px-5 py-1.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:opacity-90 text-white text-xs font-medium flex items-center gap-1 shadow transition"
-                >
-                  <Send size={14} /> Send
-                </button>
-              </div>
+            {/* Input */}
+            <div className="border-t border-zinc-200 p-2 flex gap-2">
+              <input
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && handleSend()}
+                className="flex-1 px-3 py-1.5 rounded-full border border-zinc-300 bg-white text-xs outline-none focus:ring-2 focus:ring-black"
+                placeholder="Ask Portia something..."
+              />
+              <button
+                onClick={() => handleSend()}
+                className="px-4 py-1.5 rounded-full bg-black hover:bg-zinc-800 text-white text-xs font-medium flex items-center gap-1 shadow transition"
+              >
+                <Send size={13} /> Send
+              </button>
             </div>
           </motion.div>
         </>
