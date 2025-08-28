@@ -1,7 +1,6 @@
 import { ethers } from "ethers";
 import type { LogEntry } from "@/components/dashboard/AuditLog";
 import type { CardVariant } from "@/components/Recommendations";
-import { MOCK_SUBSCRIPTIONS } from "./mockSubscriptions";
 
 /* ------------------------------
  * Provider Setup (Infura Sepolia)
@@ -98,7 +97,7 @@ export async function getWalletBalance(address: string) {
 }
 
 /* ------------------------------
- * Alerts (mock)
+ * Alerts
  * ------------------------------ */
 export interface Alert {
   id: number;
@@ -115,17 +114,15 @@ export interface Alert {
 }
 
 export async function getAlerts(): Promise<Alert[]> {
-  const { mockAlerts } = await import("./mockAlerts");
-  return mockAlerts;
+  return apiFetch<Alert[]>("/alerts");
 }
 
 export async function resolveAlert(id: number) {
-  console.log("✅ resolveAlert called for", id);
-  return { ok: true };
+  return apiFetch(`/alerts/${id}/resolve`, { method: "POST" });
 }
 
 /* ------------------------------
- * Subscriptions (frontend mock only)
+ * Subscriptions (via backend)
  * ------------------------------ */
 export interface Subscription {
   id: string;
@@ -141,45 +138,40 @@ export interface SubscriptionResponse {
   balance: number;
 }
 
-let subsState: Subscription[] = [...MOCK_SUBSCRIPTIONS];
-let balanceState = 120;
-
 export async function fetchSubscriptions(): Promise<SubscriptionResponse> {
-  return { subs: subsState, balance: balanceState };
+  return apiFetch<SubscriptionResponse>("/subscriptions");
 }
 
 export async function pauseSubscription(subId: string) {
-  subsState = subsState.map((s) =>
-    s.id === subId ? { ...s, status: "paused" } : s
-  );
-  await pushLog("action", `Paused subscription ${subId}`, { subId });
-  return { subs: subsState, balance: balanceState };
+  return apiFetch(`/stripe/pause`, {
+    method: "POST",
+    body: JSON.stringify({ subId }),
+  });
 }
 
 export async function resumeSubscription(subId: string) {
-  subsState = subsState.map((s) =>
-    s.id === subId ? { ...s, status: "active" } : s
-  );
-  await pushLog("action", `Resumed subscription ${subId}`, { subId });
-  return { subs: subsState, balance: balanceState };
+  return apiFetch(`/stripe/resume`, {
+    method: "POST",
+    body: JSON.stringify({ subId }),
+  });
 }
 
 export async function cancelSubscription(subId: string) {
-  subsState = subsState.map((s) =>
-    s.id === subId ? { ...s, status: "canceled" } : s
-  );
-  await pushLog("action", `Canceled subscription ${subId}`, { subId });
-  return { subs: subsState, balance: balanceState };
+  return apiFetch(`/stripe/cancel`, {
+    method: "POST",
+    body: JSON.stringify({ subId }),
+  });
 }
 
 export async function refundSubscription(subId: string) {
-  console.log("💸 Mock refund for", subId);
-  await pushLog("action", `Refund issued for ${subId}`, { subId });
-  return { ok: true, message: `Refund processed for ${subId}` };
+  return apiFetch(`/stripe/refund`, {
+    method: "POST",
+    body: JSON.stringify({ subId }),
+  });
 }
 
 /* ------------------------------
- * Transactions (in-memory + ETH + USDC)
+ * Transactions
  * ------------------------------ */
 export interface TxEntry {
   id: number;
@@ -191,142 +183,46 @@ export interface TxEntry {
   timestamp: string;
 }
 
-let txs: TxEntry[] = [];
-
 export async function getTransactions(address: string): Promise<TxEntry[]> {
-  const merged: TxEntry[] = [...txs];
-
-  // ✅ Etherscan ETH txs
-  try {
-    const apiKey = process.env.NEXT_PUBLIC_ETHERSCAN_API_KEY || "YourApiKeyToken";
-    const res = await fetch(
-      `https://api-sepolia.etherscan.io/api?module=account&action=txlist&address=${address}&sort=desc&apikey=${apiKey}`
-    );
-    const data = await res.json();
-    if (data.status === "1") {
-      merged.push(
-        ...data.result.slice(0, 5).map((t: any): TxEntry => ({
-          id: Number(t.timeStamp),
-          type: "eth",
-          from: t.from,
-          to: t.to,
-          amount: parseFloat(ethers.formatEther(t.value)),
-          hash: t.hash,
-          timestamp: new Date(Number(t.timeStamp) * 1000).toISOString(),
-        }))
-      );
-    }
-  } catch (err) {
-    console.error("⚠️ Failed to fetch ETH txs:", err);
-  }
-
-  // ✅ USDC transfers from logs
-  try {
-    const usdcAddr =
-      process.env.NEXT_PUBLIC_USDC_CONTRACT ||
-      "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238";
-    const usdc = new ethers.Contract(usdcAddr, ERC20_ABI, provider);
-
-    const latest = await provider.getBlockNumber();
-    const filter = usdc.filters.Transfer(null, address);
-    const logs = await usdc.queryFilter(filter, latest - 5000, "latest");
-
-    for (const log of logs) {
-      if ("args" in log && log.args) {
-        const { from, to, value } = log.args as unknown as {
-          from: string;
-          to: string;
-          value: bigint;
-        };
-
-        const block = await provider.getBlock(log.blockNumber);
-
-        merged.push({
-          id: log.blockNumber,
-          type: "usdc",
-          from,
-          to,
-          amount: parseFloat(ethers.formatUnits(value, 6)),
-          hash: log.transactionHash,
-          timestamp: block
-            ? new Date(block.timestamp * 1000).toISOString()
-            : new Date().toISOString(),
-        });
-      }
-    }
-  } catch (err) {
-    console.error("⚠️ Failed to fetch USDC transfers:", err);
-  }
-
-  return merged.sort(
-    (a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
-  );
+  return apiFetch<TxEntry[]>(`/crypto/transactions/${address}`);
 }
 
 export async function addTransaction(entry: TxEntry) {
-  txs.unshift(entry);
-  await pushLog(
-    "action",
-    `Transaction: ${entry.type.toUpperCase()} ${entry.amount} from ${entry.from.slice(
-      0,
-      6
-    )}… to ${entry.to.slice(0, 6)}…`,
-    { hash: entry.hash }
-  );
-  console.log("📝 Added transaction:", entry);
-  return { ok: true };
+  return apiFetch("/crypto/transactions", {
+    method: "POST",
+    body: JSON.stringify(entry),
+  });
 }
 
 /* ------------------------------
- * Treasury (mock actions)
+ * Treasury (backend calls)
  * ------------------------------ */
 export async function transferUSDC(to: string, amount: number) {
-  console.log("🟢 Mock transferUSDC", to, amount);
-  const entry: TxEntry = {
-    id: Date.now(),
-    type: "usdc",
-    from: "DEMO_WALLET",
-    to,
-    amount,
-    hash: "0xMOCKTX",
-    timestamp: new Date().toISOString(),
-  };
-  await addTransaction(entry);
-  return { status: "mocked", ...entry };
+  return apiFetch("/crypto/transfer", {
+    method: "POST",
+    body: JSON.stringify({ to, amount }),
+  });
 }
 
 export async function mintUSDC(amount: number) {
-  console.log("🟢 Mock mintUSDC", amount);
-  await pushLog("action", `Minted ${amount} USDC`, { amount });
-  return { status: "mocked", amount };
+  return apiFetch("/crypto/mint", {
+    method: "POST",
+    body: JSON.stringify({ amount }),
+  });
 }
 
 export async function redeemUSDC(amount: number) {
-  console.log("🟢 Mock redeemUSDC", amount);
-  await pushLog("action", `Redeemed ${amount} USDC`, { amount });
-  return { status: "mocked", amount };
+  return apiFetch("/crypto/redeem", {
+    method: "POST",
+    body: JSON.stringify({ amount }),
+  });
 }
 
 /* ------------------------------
- * Logs (in-memory with defaults)
+ * Logs
  * ------------------------------ */
-let logs: LogEntry[] = [
-  {
-    id: Date.now(),
-    type: "info",
-    message: "🚀 Portia Finance Agent started",
-    timestamp: new Date().toISOString(),
-  },
-  {
-    id: Date.now() + 1,
-    type: "success",
-    message: "Connected to mock subscriptions + wallets",
-    timestamp: new Date().toISOString(),
-  },
-];
-
 export async function getLogs(): Promise<LogEntry[]> {
-  return logs;
+  return apiFetch<LogEntry[]>("/logs");
 }
 
 export async function pushLog(
@@ -334,20 +230,14 @@ export async function pushLog(
   message: string,
   details?: Record<string, any>
 ) {
-  const entry: LogEntry = {
-    id: Date.now(),
-    type,
-    message,
-    timestamp: new Date().toISOString(),
-    details,
-  };
-  logs.unshift(entry);
-  console.log("📒 pushLog:", entry);
-  return { ok: true };
+  return apiFetch("/logs", {
+    method: "POST",
+    body: JSON.stringify({ type, message, details }),
+  });
 }
 
 /* ------------------------------
- * Portia Mock Responses
+ * Portia AI (via backend)
  * ------------------------------ */
 export interface CardMessage {
   type: "card";
@@ -359,21 +249,8 @@ export interface CardMessage {
 export type PortiaResponse = string | CardMessage;
 
 export async function askPortia(query: string, user = "demo") {
-  console.log("🤖 Mock askPortia:", query);
-  await pushLog("info", `User asked Portia: ${query}`);
-  return {
-    responses: [
-      {
-        type: "card",
-        variant: "subscription",
-        title: "Mock Recommendation",
-        description: "You’re spending too much on subscriptions.",
-        actions: [
-          { label: "Pause Netflix", tool: "pauseSubscription", args: { subId: "sub1" } },
-          { label: "Cancel Spotify", tool: "cancelSubscription", args: { subId: "sub2" } },
-          { label: "Skip for now", tool: "noop" },
-        ],
-      },
-    ],
-  };
+  return apiFetch(`/agent/ask`, {
+    method: "POST",
+    body: JSON.stringify({ query, user }),
+  });
 }
