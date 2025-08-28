@@ -1,100 +1,117 @@
-# Portia Finance Agent 💸🤖
+# Portia Finance Agent 
 
-Portia Finance Agent is a **multi-wallet finance guardian** that helps you track crypto balances, manage subscriptions, and act on real-time alerts with an AI console.  
-Built with **Next.js + FastAPI + Stripe + Web3**.
-
----
-
-## 🚀 Features
-
-- **Crypto Wallets**
-  - Sepolia ETH + USDC balances
-  - Real-time transactions
-  - Judge & Demo wallet comparison
-
-- **Subscriptions**
-  - Manage Spotify, Netflix, Prime, ChatGPT, and more
-  - Pause, Resume, Cancel, Refund via Stripe Sandbox
-  - Live balance tracking
-
-- **Markets & Alerts**
-  - Crypto market prices
-  - Automated alerts (low balance, BTC price spike, etc.)
-  - AI-powered recommendations with action buttons
-
-- **Portia AI Console**
-  - Chat-like interface
-  - Real-time responses + quick actions
-  - Connected with backend tools
+A full-stack **AI-powered finance dashboard** for managing wallets, subscriptions, and alerts with the help of **Portia AI**.  
+Built with **Next.js 15 + Tailwind + shadcn/ui** on the frontend and **FastAPI + Python** on the backend.  
 
 ---
 
-## 🛠️ Tech Stack
+## 🤖 Tech Stack
 
-- **Frontend:** Next.js 15 (App Router, TailwindCSS, shadcn/ui, Framer Motion)
-- **Backend:** FastAPI (Python), Stripe SDK, Web3.py
-- **Blockchain:** Sepolia testnet (ETH + USDC)
-- **Infra:**  
-  - Frontend → Vercel  
-  - Backend → Render  
+### Frontend
+- **Next.js 15** (App Router, React 19)
+- **TailwindCSS 4**
+- **shadcn/ui + Radix UI**
+- **Framer Motion** (animations)
+- **ethers.js v6** (crypto wallet integration)
+- **Vercel** (hosting)
 
----
-
-## 📂 Project Structure
-.
-├── frontend/ # Next.js app (deployed on Vercel)
-├── backend/ # FastAPI app (deployed on Render)
-├── scripts/ # Helper scripts (not used in build)
-├── data/ # Local db/json files (ignored by Vercel)
-├── types/ # Shared TypeScript types
-├── .vercelignore # Prevents backend/scripts from being uploaded
-└── README.md
+### Backend
+- **FastAPI (Python 3.11)**  
+- **httpx** (API calls to external services)  
+- **Web3.py / ethers** (blockchain interaction)  
+- **Render** (backend hosting)
 
 ---
 
-## ⚙️ Environment Variables
+## ⚙️ Features
+- 🔐 **Wallet Manager** – Track balances (ETH + USDC Sepolia Testnet)  
+- 💳 **Subscriptions Manager** – Pause, resume, cancel, and refund demo plans  
+- ⚡ **Real-Time Alerts** – Market moves, low balances, subscriptions  
+- 📝 **Audit Logs** – Every action logged for transparency  
+- 🤖 **Portia AI Console** – Ask Portia about your wallets & subscriptions  
 
-### Frontend (`/frontend/.env.local`)
-
-
-NEXT_PUBLIC_API_URL=https://your-backend.onrender.com/api
-
-NEXT_PUBLIC_DEMO_WALLET=0x...
-NEXT_PUBLIC_JUDGE_WALLET=0x...
-NEXT_PUBLIC_RPC_URL=https://sepolia.infura.io/v3/your-key
-
-NEXT_PUBLIC_USDC_CONTRACT=0x...
-NEXT_PUBLIC_ETHERSCAN_API_KEY=your-api-key
-
-
-### Backend (`/.env`)
-
-PORTIA_API_KEY=your-portia-key
-OPENAI_API_KEY=your-openai-key
-STRIPE_SECRET_KEY=sk_test_...
+---
+```
+📂 Project Structure
+├── backend/ # FastAPI backend (deployed on Render)
+│ ├── main.py
+│ ├── routes/
+│ └── services/
+│
+├── frontend/ # Next.js frontend (deployed on Vercel)
+│ ├── public/
+│ ├── src/
+│ │ ├── app/
+│ │ │ ├── page.tsx
+│ │ │ └── layout.tsx
+│ │ ├── components/
+│ │ └── lib/
+│ └── package.json
+│
+├── .vercelignore
+├── README.md
+└── requirements.txt # backend Python deps
+```
 
 ---
 
-##  Running Locally
+## 🔧 Local Development
 
-1. **Backend (FastAPI)**
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   uvicorn main:app --reload
+### 1. Clone repo
+```bash
+git clone https://github.com/OscarK-coder/portia-finance-agent.git
+cd portia-finance-agent
+```
+### 2. Backend (FastAPI)
 
-2. **Backend (FastAPI)**
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate    # (Linux/Mac)
+.venv\Scripts\activate       # (Windows PowerShell)
 
-Deployment
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
 
-Frontend: Vercel (frontend/ as root directory)
+##### API runs at: http://127.0.0.1:8000
 
-Backend: Render (point to backend/requirements.txt)
+### 3. Frontend (Next.js)
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-Use .vercelignore to exclude backend/, scripts/, and data/ from Vercel.
+## 📦 Deployment
 
-Screenshots
+### 🔹 Backend
+- **Platform**: [Render](https://render.com) 
+- **Base URL**: [`https://portia-finance-agent.onrender.com/api`](https://portia-finance-agent.onrender.com/api)
+
+### 🔹 Frontend
+- **Platform**: [Vercel](https://vercel.com)  
+- **Base URL**: [`https://portia-finance-agent.vercel.app`](https://portia-finance-agent.vercel.app) 
+
+### 🌍 Environment Variables (Frontend)
+Set the following in **Vercel → Project Settings → Environment Variables**:
+
+```env
+# Backend API
+NEXT_PUBLIC_API_URL=https://portia-finance-agent.onrender.com/api
+# Ethereum RPC (Sepolia Testnet)
+NEXT_PUBLIC_RPC_URL=https://sepolia.infura.io/v3/YOUR_INFURA_KEY
+# USDC Testnet Contract (Sepolia)
+NEXT_PUBLIC_USDC_CONTRACT=YOUR_PUBLIC_KEY
+```
+
+## 🖼️ Screenshots
+
+### Dashboard
+![Dashboard](./frontend/public/screenshots/dashboard.png)
+
+### AI Console
+![AI Console](./frontend/public/screenshots/ai-console.png)
+
+### Subscriptions
+![Subscriptions](./frontend/public/screenshots/subscriptions.png)
