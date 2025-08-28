@@ -1,0 +1,21 @@
+# Ignore local env + Python venv
+.venv
+.env
+
+# Ignore backend & server files
+backend/
+requirements.txt
+
+# Ignore test files
+tests/
+
+# Ignore scripts not needed for frontend
+scripts/
+
+# Ignore local data files
+data/
+*.db
+*.json
+
+# Ignore docs
+README.md
