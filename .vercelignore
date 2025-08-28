@@ -15,7 +15,7 @@ scripts/
 # Ignore local data files
 data/
 *.db
-*.json
 
-# Ignore docs
-README.md
+# Ignore build cache & deps
+node_modules/
+.next/
