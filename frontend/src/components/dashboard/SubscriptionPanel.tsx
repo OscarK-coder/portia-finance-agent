@@ -4,13 +4,24 @@ import { CreditCard } from "lucide-react";
 import Panel from "@/components/Panel";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useState } from "react";
-import { useSubscriptions } from "@/hooks/useSubscriptions";
+import type { Subscription } from "@/lib/api";
 
-export default function SubscriptionPanel() {
-  const { subs, loading, pause, resume, cancel, refund } = useSubscriptions();
+interface SubscriptionPanelProps {
+  subscriptions: Subscription[];
+  balance: number;
+  onPause: (id: string) => Promise<void>;
+  onResume: (id: string) => Promise<void>;
+  onCancel: (id: string) => Promise<void>;
+}
 
-  // Stripe balance (mocked for demo)
-  const [balance, setBalance] = useState(120); // pretend fetched from Stripe
+export default function SubscriptionPanel({
+  subscriptions,
+  balance,
+  onPause,
+  onResume,
+  onCancel,
+}: SubscriptionPanelProps) {
+  // Animate Stripe balance
   const motionBalance = useMotionValue(balance);
   const balanceDisplay = useTransform(motionBalance, (latest) =>
     `$${latest.toFixed(2)}`
@@ -30,15 +41,7 @@ export default function SubscriptionPanel() {
     };
   }, [balance, motionBalance]);
 
-  if (loading) {
-    return (
-      <Panel title="Subscriptions">
-        <p className="text-sm text-zinc-500 italic">Loading subscriptions…</p>
-      </Panel>
-    );
-  }
-
-  const sortedSubs = [...subs].sort((a, b) => {
+  const sortedSubs = [...subscriptions].sort((a, b) => {
     if (!a.renews_on) return 1;
     if (!b.renews_on) return -1;
     return new Date(a.renews_on).getTime() - new Date(b.renews_on).getTime();
@@ -126,13 +129,13 @@ export default function SubscriptionPanel() {
                   {sub.status === "active" && (
                     <>
                       <button
-                        onClick={() => pause(sub.id)}
+                        onClick={() => onPause(sub.id)}
                         className="flex-1 px-3 py-1 text-xs bg-amber-500 text-white rounded-full"
                       >
                         Pause
                       </button>
                       <button
-                        onClick={() => cancel(sub.id)}
+                        onClick={() => onCancel(sub.id)}
                         className="flex-1 px-3 py-1 text-xs bg-rose-600 text-white rounded-full"
                       >
                         Cancel
@@ -141,18 +144,10 @@ export default function SubscriptionPanel() {
                   )}
                   {sub.status === "paused" && (
                     <button
-                      onClick={() => resume(sub.id)}
+                      onClick={() => onResume(sub.id)}
                       className="flex-1 px-3 py-1 text-xs bg-emerald-600 text-white rounded-full"
                     >
                       Resume
-                    </button>
-                  )}
-                  {sub.status === "canceled" && (
-                    <button
-                      onClick={() => refund(sub.id)}
-                      className="flex-1 px-3 py-1 text-xs bg-indigo-500 text-white rounded-full"
-                    >
-                      Refund
                     </button>
                   )}
                 </div>
