@@ -19,21 +19,33 @@ const ERC20_ABI = [
 /* ------------------------------
  * API Base (FastAPI backend)
  * ------------------------------ */
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api";
+const API_BASE =
+  process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api";
+
+// 🌐 Log which backend is used at runtime
+if (typeof window !== "undefined") {
+  console.log("🌐 Using API_BASE:", API_BASE);
+}
 
 async function apiFetch<T = any>(
   endpoint: string,
   options?: RequestInit
 ): Promise<T> {
-  const res = await fetch(`${API_BASE}${endpoint}`, {
-    headers: { "Content-Type": "application/json" },
-    ...options,
-  });
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`API error ${res.status}: ${res.statusText} – ${text}`);
+  const url = `${API_BASE}${endpoint}`;
+  try {
+    const res = await fetch(url, {
+      headers: { "Content-Type": "application/json" },
+      ...options,
+    });
+    if (!res.ok) {
+      const text = await res.text();
+      throw new Error(`API error ${res.status}: ${res.statusText} – ${text}`);
+    }
+    return (await res.json()) as T;
+  } catch (err) {
+    console.error(`❌ API request failed: ${url}`, err);
+    throw err;
   }
-  return (await res.json()) as T;
 }
 
 export { apiFetch };
