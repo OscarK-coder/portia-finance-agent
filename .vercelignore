@@ -1,21 +1,18 @@
-# Ignore local env + Python venv
+# Local env + Python venv
 .venv
 .env
 
-# Ignore backend & server files
+# Backend (FastAPI) not needed for frontend build
 backend/
-requirements.txt
 
-# Ignore test files
-tests/
-
-# Ignore scripts not needed for frontend
+# Scripts not needed for frontend
 scripts/
 
-# Ignore local data files
+# Local data files (DB, JSON, etc.)
 data/
 *.db
+*.json
 
-# Ignore build cache & deps
+# Build artifacts & deps (Vercel will install fresh)
 node_modules/
 .next/
