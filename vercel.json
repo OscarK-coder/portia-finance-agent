@@ -2,5 +2,9 @@
   "version": 2,
   "builds": [
     { "src": "frontend/package.json", "use": "@vercel/next" }
+  ],
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://portia-finance-agent.onrender.com/api/:path*" },
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
