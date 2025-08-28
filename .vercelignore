@@ -11,7 +11,6 @@ scripts/
 # Local data files (DB, JSON, etc.)
 data/
 *.db
-*.json
 
 # Build artifacts & deps (Vercel will install fresh)
 node_modules/
